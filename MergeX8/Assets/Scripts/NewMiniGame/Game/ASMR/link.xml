@@ -1,0 +1,9 @@
+<linker>
+    <assembly fullname="AudioSource" preserve="all"/>
+    <assembly fullname="AudioSource" preserve="all"/>
+    <assembly fullname="UnityEngine">
+        <type fullname="UnityEngine.CircleCollider2D" preserve="all"/>
+        <type fullname="UnityEngine.BoxCollider2D" preserve="all"/>
+        <type fullname="UnityEngine.SpriteMask" preserve="all"/>
+    </assembly>
+</linker>

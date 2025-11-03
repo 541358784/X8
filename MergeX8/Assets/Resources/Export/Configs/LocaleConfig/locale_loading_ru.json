@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Принять политику конфиденциальности"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Чтобы продолжить игру, вам необходимо подтвердить свое согласие с нашей Политикой конфиденциальности."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Политика конфиденциальности"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Я согласен"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Не удалось загрузить ресурс, проверьте интернет."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Не удалось подключиться к серверу. Пожалуйста, проверьте подключение к интернету."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "отменить"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "ХОРОШО"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "Повторить попытку"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "отменить"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Хотели бы вы бросить?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Вы открыли игру на другом устройстве. Чтобы играть на другом устройстве, закройте эту игру. Чтобы продолжить играть здесь, просто нажмите «ОК», и игра перезапустится."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Пожалуйста, обновите приложение до последней версии и перезапустите игру."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "Советы"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Команды обслуживания"
+    }
+]

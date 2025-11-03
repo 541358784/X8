@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f37bcc778e54c22bc92510e5c20a5f, type: 3}
+  m_Name: TMP Settings Pt
+  m_EditorClassIdentifier: 
+  m_list:
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF Material
+    m_materialSuffix: Material
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: -857594638278891269, guid: f6dd3ba3b0857ee4cb7942372332c44a,
+      type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Outline Brown
+    m_materialSuffix: X8 Outline Brown
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 770ae2ff62609b847a0a21bd9bc82762, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Outline Green
+    m_materialSuffix: X8 Outline Green
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 21a6c4a8c88a9b14487cba5e652bef31, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Outline Purple
+    m_materialSuffix: X8 Outline Purple
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 2e7d377e3160f1047bd0cdb4bc8920c0, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Blue
+    m_materialSuffix: X8 Shadow Blue
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 0808b7ea4fafab74687dd891b67b6cc3, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Brown
+    m_materialSuffix: X8 Shadow Brown
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 83ae24f7bdec1fc4fb613fb7e9bc344e, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Green
+    m_materialSuffix: X8 Shadow Green
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 8b41a178cd6b66d479d3858089265b84, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Grey
+    m_materialSuffix: X8 Shadow Grey
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: e608cab8a4ed01143a7826939b97b05e, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Purple
+    m_materialSuffix: X8 Shadow Purple
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: c264fea2609d33244a866217006ea0f5, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Red
+    m_materialSuffix: X8 Shadow Red
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 7b7466d039f238041b85a5ad450aed36, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow TaskGrey
+    m_materialSuffix: X8 Shadow TaskGrey
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: b66b3eb189aad60489f77957c08a013a, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow TaskYellow
+    m_materialSuffix: X8 Shadow TaskYellow
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 0483100f9a47d2e47970bfa8cade72f3, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Title
+    m_materialSuffix: X8 Shadow Title
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 9653f2e8a89a11e499a3ba5b00858375, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Yellow
+    m_materialSuffix: X8 Shadow Yellow
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: a9ea4ca0f27269b4085c06e11d73c36f, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Outline White
+    m_materialSuffix: X8 Outline White
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: b4d661e7775b47a4b93d4874cf6c14b1, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Common
+    m_materialSuffix: X8 Shadow Common
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 488f1cbe9f3549b41817ceecbffb5816, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Black
+    m_materialSuffix: X8 Shadow Black
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 488f1cbe9f3549b41817ceecbffb5816, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Brown1
+    m_materialSuffix: X8 Shadow Brown1
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 488f1cbe9f3549b41817ceecbffb5816, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Purple1
+    m_materialSuffix: X8 Shadow Purple1
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 9829021b41a85f14096fe35ec4c4cb47, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Bp1
+    m_materialSuffix: X8 Bp1
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: ff7e735c66bf08849b488c13c6b4f841, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Purple2
+    m_materialSuffix: X8 Shadow Purple2
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 044f1e14e2132264eaa2b76cefe922b3, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Black1
+    m_materialSuffix: X8 Shadow Black1
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: e73b67d8a387929419d1351d01892e7b, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Yellow1
+    m_materialSuffix: X8 Shadow Yellow1
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 5e5e003316d76b64eaa6f6927ecc4802, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Yellow2
+    m_materialSuffix: X8 Shadow Yellow2
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 5e5e003316d76b64eaa6f6927ecc4802, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Pink
+    m_materialSuffix: X8 Shadow Pink
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 655af1e3a424b0548b50697f346132c7, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Blue1
+    m_materialSuffix: X8 Shadow Blue1
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 655af1e3a424b0548b50697f346132c7, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Blue2
+    m_materialSuffix: X8 Shadow Blue2
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 655af1e3a424b0548b50697f346132c7, type: 2}
+  - m_isLock: 1
+    m_name: LocaleFont_Pt SDF X8 Shadow Gold
+    m_materialSuffix: X8 Shadow Gold
+    m_characterSpacing: 0
+    m_wordSpacing: 0
+    m_lineSpacing: 0
+    m_paragraphSpacing: 0
+    m_fontAsset: {fileID: 11400000, guid: f6dd3ba3b0857ee4cb7942372332c44a, type: 2}
+    m_material: {fileID: 2100000, guid: 655af1e3a424b0548b50697f346132c7, type: 2}

@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "隐私协议"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "继续游戏前，您需要同意我们的隐私协议"
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "隐私协议"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "同意"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "没有互联网连接。\n请检查网络连接并重试。"
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "没有互联网连接。请连接到互联网再试"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "取消"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "好的"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "再来一次"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "取消"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "你想要退出游戏吗？"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "另一台设备上也打开了该游戏。如果你想在其他设备上玩，请关闭这个游戏。如果你现在想继续玩，请点击“确定”，我们会重新打开该游戏。"
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "您好：当前版本需要更新，还请更新后通过邮件查收更新奖励。"
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "提示"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "服务协议"
+    }
+]

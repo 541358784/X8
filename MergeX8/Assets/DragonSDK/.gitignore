@@ -1,0 +1,5 @@
+DragonU3DSDK/.Tools/node_modules/
+DragonU3DSDK/Resources/ChartboostSettings.asset
+DragonU3DSDK/Resources/ChartboostSettings.asset.meta
+DragonU3DSDK/SDK/Dlugins/Managed/MaxPlugin/MaxSdk/Resources/Images/*.meta
+DragonU3DSDK/SDK/Dlugins/ExternalDependencyManager/Editor/Google.VersionHandler.pdb.meta

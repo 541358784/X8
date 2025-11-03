@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Accept Privacy Policy"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "To continue playing, you need to confirm that you agree to our Privacy Policy."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Privacy Policy"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "I Agree"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Failed to download resource, please check your internet."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Failed to connect to the server. Please check your Internet connection."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Cancel"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "OK"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "Retry"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Cancel"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Would you like to quit?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "You've opened the game on another device. To play on the other device, please close this game. To keep playing here, just tap 'OK' and this game will restart."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Please update your app to latest version and check the update rewards via email."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "Tips"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Teams of Service"
+    }
+]

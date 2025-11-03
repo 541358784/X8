@@ -1,0 +1,615 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06136a3ce37314440890dc4d25623490, type: 3}
+  m_Name: AtlasConfigController
+  m_EditorClassIdentifier: 
+  AtlasPathNodeList:
+  - AtlasName: CoomonAtlas
+    HdPath: SpriteAtlas/CoomonAtlas/Hd/CoomonAtlas
+    SdPath: SpriteAtlas/CoomonAtlas/Sd/CoomonAtlas
+  - AtlasName: MergeAtlas
+    HdPath: SpriteAtlas/MergeAtlas/Hd/MergeAtlas
+    SdPath: SpriteAtlas/MergeAtlas/Sd/MergeAtlas
+  - AtlasName: MakeOverAtlas
+    HdPath: SpriteAtlas/MakeOverAtlas/Hd/MakeOverAtlas
+    SdPath: SpriteAtlas/MakeOverAtlas/Sd/MakeOverAtlas
+  - AtlasName: Level101Atlas
+    HdPath: Stimulate/Levels/Level101/SpriteAtlas/Level101/Hd/Level101Atlas
+    SdPath: Stimulate/Levels/Level101/SpriteAtlas/Level101/Sd/Level101Atlas
+  - AtlasName: FilthyLevel101Atlas
+    HdPath: Filthy/Level101/SpriteAtlas/FilthyLevel101Atlas/Hd/FilthyLevel101Atlas
+    SdPath: Filthy/Level101/SpriteAtlas/FilthyLevel101Atlas/Sd/FilthyLevel101Atlas
+  - AtlasName: FarmIconAtlas
+    HdPath: Farm/SpriteAtlas/FarmIconAtlas/Hd/FarmIconAtlas
+    SdPath: Farm/SpriteAtlas/FarmIconAtlas/Sd/FarmIconAtlas
+  - AtlasName: MergeIconAtlas
+    HdPath: SpriteAtlas/MergeIconAtlas/Hd/MergeIconAtlas
+    SdPath: SpriteAtlas/MergeIconAtlas/Sd/MergeIconAtlas
+  - AtlasName: StimulateAtlas
+    HdPath: SpriteAtlas/StimulateAtlas/Hd/StimulateAtlas
+    SdPath: SpriteAtlas/StimulateAtlas/Sd/StimulateAtlas
+  - AtlasName: ClimbTowerAtlas
+    HdPath: SpriteAtlas/ActivityLocalAtlas/ClimbTowerAtlas/Hd/ClimbTowerAtlas
+    SdPath: SpriteAtlas/ActivityLocalAtlas/ClimbTowerAtlas/Sd/ClimbTowerAtlas
+  - AtlasName: PsychologyAtlas
+    HdPath: SpriteAtlas/PsychologyAtlas/Hd/PsychologyAtlas
+    SdPath: SpriteAtlas/PsychologyAtlas/Sd/PsychologyAtlas
+  - AtlasName: UIStoryAtlas
+    HdPath: SpriteAtlas/UIStoryAtlas/Hd/UIStoryAtlas
+    SdPath: SpriteAtlas/UIStoryAtlas/Sd/UIStoryAtlas
+  - AtlasName: GiftBagLinkAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagLinkAtlas/Hd/GiftBagLinkAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagLinkAtlas/Sd/GiftBagLinkAtlas
+  - AtlasName: EasterAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/EasterAtlas/Hd/EasterAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/EasterAtlas/Sd/EasterAtlas
+  - AtlasName: BattlePassAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/BattlePassAtlas/Hd/BattlePassAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/BattlePassAtlas/Sd/BattlePassAtlas
+  - AtlasName: BPTwoAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/BPTwoAtlas/Hd/BPTwoAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/BPTwoAtlas/Sd/BPTwoAtlas
+  - AtlasName: EasterPackAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/EasterPackAtlas/Hd/EasterPackAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/EasterPackAtlas/Sd/EasterPackAtlas
+  - AtlasName: MermaidAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/MermaidAtlas/Hd/MermaidAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/MermaidAtlas/Sd/MermaidAtlas
+  - AtlasName: LevelRankingAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/LevelRankingAtlas/Hd/LevelRankingAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/LevelRankingAtlas/Sd/LevelRankingAtlas
+  - AtlasName: DogAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/DogAtlas/Hd/DogAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/DogAtlas/Sd/DogAtlas
+  - AtlasName: GarageCleanupAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GarageCleanupAtlas/Hd/GarageCleanupAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GarageCleanupAtlas/Sd/GarageCleanupAtlas
+  - AtlasName: PayRebateAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/PayRebate/Hd/PayRebate
+    SdPath: SpriteAtlas/ActivityAtlas/PayRebate/Sd/PayRebate
+  - AtlasName: PigBoxAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/PigBoxAtlas/Hd/PigBoxAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/PigBoxAtlas/Sd/PigBoxAtlas
+  - AtlasName: WorldAtlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/World/Hd/WorldAtlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/World/Sd/WorldAtlas
+  - AtlasName: Area101Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area101/Hd/Area101Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area101/Sd/Area101Atlas
+  - AtlasName: Area201Atlas
+    HdPath: Decoration/Worlds/World2/SpriteAtlas/Area201/Hd/Area201Atlas
+    SdPath: Decoration/Worlds/World2/SpriteAtlas/Area201/Sd/Area201Atlas
+  - AtlasName: Area102Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area102/Hd/Area102Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area102/Sd/Area102Atlas
+  - AtlasName: Area103Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area103/Hd/Area103Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area103/Sd/Area103Atlas
+  - AtlasName: Area104Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area104/Hd/Area104Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area104/Sd/Area104Atlas
+  - AtlasName: Area105Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area105/Hd/Area105Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area105/Sd/Area105Atlas
+  - AtlasName: Area106Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area106/Hd/Area106Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area106/Sd/Area106Atlas
+  - AtlasName: Area107Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area107/Hd/Area107Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area107/Sd/Area107Atlas
+  - AtlasName: Area108Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area108/Hd/Area108Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area108/Sd/Area108Atlas
+  - AtlasName: Area109Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area109/Hd/Area109Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area109/Sd/Area109Atlas
+  - AtlasName: Area110Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area110/Hd/Area110Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area110/Sd/Area110Atlas
+  - AtlasName: Area111Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area111/Hd/Area111Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area111/Sd/Area111Atlas
+  - AtlasName: Area999Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area999/Hd/Area999Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area999/Sd/Area999Atlas
+  - AtlasName: Area900Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area900/Hd/Area900Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area900/Sd/Area900Atlas
+  - AtlasName: Area10001Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Area10001/Hd/Area10001Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Area10001/Sd/Area10001Atlas
+  - AtlasName: Build201Atlas
+    HdPath: Decoration/Worlds/World2/SpriteAtlas/Build201/Hd/Build201Atlas
+    SdPath: Decoration/Worlds/World2/SpriteAtlas/Build201/Sd/Build201Atlas
+  - AtlasName: Build101Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build101/Hd/Build101Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build101/Sd/Build101Atlas
+  - AtlasName: Build102Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build102/Hd/Build102Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build102/Sd/Build102Atlas
+  - AtlasName: Build103Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build103/Hd/Build103Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build103/Sd/Build103Atlas
+  - AtlasName: Build104Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build104/Hd/Build104Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build104/Sd/Build104Atlas
+  - AtlasName: Build105Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build105/Hd/Build105Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build105/Sd/Build105Atlas
+  - AtlasName: Build106Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build106/Hd/Build106Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build106/Sd/Build106Atlas
+  - AtlasName: Build107Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build107/Hd/Build107Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build107/Sd/Build107Atlas
+  - AtlasName: Build108Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build108/Hd/Build108Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build108/Sd/Build108Atlas
+  - AtlasName: Build109Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build109/Hd/Build109Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build109/Sd/Build109Atlas
+  - AtlasName: Build110Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build110/Hd/Build110Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build110/Sd/Build110Atlas
+  - AtlasName: Build111Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build111/Hd/Build111Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build111/Sd/Build111Atlas
+  - AtlasName: Build999Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build999/Hd/Build999Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build999/Sd/Build999Atlas
+  - AtlasName: Build900Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build900/Hd/Build900Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build900/Sd/Build900Atlas
+  - AtlasName: Build880Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build880/Hd/Build880Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build880/Sd/Build880Atlas
+  - AtlasName: Build881Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build881/Hd/Build881Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build881/Sd/Build881Atlas
+  - AtlasName: Build882Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build882/Hd/Build882Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build882/Sd/Build882Atlas
+  - AtlasName: Build883Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build883/Hd/Build883Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build883/Sd/Build883Atlas
+  - AtlasName: Build884Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build884/Hd/Build884Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build884/Sd/Build884Atlas
+  - AtlasName: Build888Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build888/Hd/Build888Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build888/Sd/Build888Atlas
+  - AtlasName: Build889Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build889/Hd/Build889Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build889/Sd/Build889Atlas
+  - AtlasName: Build887Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build887/Hd/Build887Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build887/Sd/Build887Atlas
+  - AtlasName: Build886Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build886/Hd/Build886Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build886/Sd/Build886Atlas
+  - AtlasName: Build10001Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build10001/Hd/Build10001Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build10001/Sd/Build10001Atlas
+  - AtlasName: Build885Atlas
+    HdPath: Decoration/Worlds/World1/SpriteAtlas/Build885/Hd/Build885Atlas
+    SdPath: Decoration/Worlds/World1/SpriteAtlas/Build885/Sd/Build885Atlas
+  - AtlasName: DecoAreaIconAtlas
+    HdPath: SpriteAtlas/DecoAreaIconAtlas/Hd/DecoAreaIconAtlas
+    SdPath: SpriteAtlas/DecoAreaIconAtlas/Sd/DecoAreaIconAtlas
+  - AtlasName: HomeAtlas
+    HdPath: SpriteAtlas/HomeAtlas/Hd/HomeAtlas
+    SdPath: SpriteAtlas/HomeAtlas/Sd/HomeAtlas
+  - AtlasName: ClimbTreeAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ClimbTreeAtlas/Hd/ClimbTreeAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ClimbTreeAtlas/Sd/ClimbTreeAtlas
+  - AtlasName: CoinRushllllllSkin1Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/CoinRushllllllSkin1Atlas/Hd/CoinRushllllllSkin1Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/CoinRushllllllSkin1Atlas/Sd/CoinRushllllllSkin1Atlas
+  - AtlasName: CoinRushllllllSkin2Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/CoinRushllllllSkin2Atlas/Hd/CoinRushllllllSkin2Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/CoinRushllllllSkin2Atlas/Sd/CoinRushllllllSkin2Atlas
+  - AtlasName: MultipleScoreAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/MultipleScoreAtlas/Hd/MultipleScoreAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/MultipleScoreAtlas/Sd/MultipleScoreAtlas
+  - AtlasName: TMatchAtlas
+    HdPath: TMatch/SpriteAtlas/TMatchAtlas/Hd/TMatchAtlas
+    SdPath: TMatch/SpriteAtlas/TMatchAtlas/Sd/TMatchAtlas
+  - AtlasName: GuideAtlas
+    HdPath: TMatch/SpriteAtlas/GuideAtlas/Hd/GuideAtlas
+    SdPath: TMatch/SpriteAtlas/GuideAtlas/Sd/GuideAtlas
+  - AtlasName: WeeklyChallengeAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TMatch/WeeklyChallengeAtlas/Hd/WeeklyChallengeAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TMatch/WeeklyChallengeAtlas/Sd/WeeklyChallengeAtlas
+  - AtlasName: RecoverCoinllllllDefaultAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/RecoverCoinllllllDefaultAtlas/Hd/RecoverCoinllllllDefaultAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/RecoverCoinllllllDefaultAtlas/Sd/RecoverCoinllllllDefaultAtlas
+  - AtlasName: RecoverCoinllllllChristmasAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/RecoverCoinllllllChristmasAtlas/Hd/RecoverCoinllllllChristmasAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/RecoverCoinllllllChristmasAtlas/Sd/RecoverCoinllllllChristmasAtlas
+  - AtlasName: RecoverCoinllllllSummerAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/RecoverCoinllllllSummerAtlas/Hd/RecoverCoinllllllSummerAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/RecoverCoinllllllSummerAtlas/Sd/RecoverCoinllllllSummerAtlas
+  - AtlasName: SummerWatermelonNormalAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/SummerWatermelonNormalAtlas/Hd/SummerWatermelonNormalAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/SummerWatermelonNormalAtlas/Sd/SummerWatermelonNormalAtlas
+  - AtlasName: SummerWatermelonBreadAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/SummerWatermelonBreadAtlas/Hd/SummerWatermelonBreadAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/SummerWatermelonBreadAtlas/Sd/SummerWatermelonBreadAtlas
+  - AtlasName: CoinCompetitionAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CoinCompetitionAtlas/Hd/CoinCompetitionAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CoinCompetitionAtlas/Sd/CoinCompetitionAtlas
+  - AtlasName: DigTrenchAtlas
+    HdPath: SpriteAtlas/DigTrenchAtlas/Hd/DigTrenchAtlas
+    SdPath: SpriteAtlas/DigTrenchAtlas/Sd/DigTrenchAtlas
+  - AtlasName: FishEatFishAtlas
+    HdPath: SpriteAtlas/FishEatFishAtlas/Hd/FishEatFishAtlas
+    SdPath: SpriteAtlas/FishEatFishAtlas/Sd/FishEatFishAtlas
+  - AtlasName: OnePathAtlas
+    HdPath: SpriteAtlas/OnePathAtlas/Hd/OnePathAtlas
+    SdPath: SpriteAtlas/OnePathAtlas/Sd/OnePathAtlas
+  - AtlasName: ConnectLineAtlas
+    HdPath: SpriteAtlas/ConnectLineAtlas/Hd/ConnectLineAtlas
+    SdPath: SpriteAtlas/ConnectLineAtlas/Sd/ConnectLineAtlas
+  - AtlasName: TMBPAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TMatch/TMBPAtlas/Hd/TMBPAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TMatch/TMBPAtlas/Sd/TMBPAtlas
+  - AtlasName: TMGiftBagLinkAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TMatch/TMGiftBagLinkAtlas/Hd/TMGiftBagLinkAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TMatch/TMGiftBagLinkAtlas/Sd/TMGiftBagLinkAtlas
+  - AtlasName: CoinLeaderBoardAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CoinLeaderBoardAtlas/Hd/CoinLeaderBoardAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CoinLeaderBoardAtlas/Sd/CoinLeaderBoardAtlas
+  - AtlasName: CrocodileAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TMatch/CrocodileAtlas/Hd/CrocodileAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TMatch/CrocodileAtlas/Sd/CrocodileAtlas
+  - AtlasName: SeaRacingAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/SeaRacingAtlas/Hd/SeaRacingAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/SeaRacingAtlas/Sd/SeaRacingAtlas
+  - AtlasName: HappyGoAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/HappyGoAtlas/Hd/HappyGoAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/HappyGoAtlas/Sd/HappyGoAtlas
+  - AtlasName: ThreeGiftAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThreeGiftAtlas/Hd/ThreeGiftAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThreeGiftAtlas/Sd/ThreeGiftAtlas
+  - AtlasName: MultipleGiftAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/MultipleGiftAtlas/Hd/MultipleGiftAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/MultipleGiftAtlas/Sd/MultipleGiftAtlas
+  - AtlasName: TimeOrderAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TimeOrderAtlas/Hd/TimeOrderAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TimeOrderAtlas/Sd/TimeOrderAtlas
+  - AtlasName: FarmTimeLimitAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/FarmTimeLimitAtlas/Hd/FarmTimeLimitAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/FarmTimeLimitAtlas/Sd/FarmTimeLimitAtlas
+  - AtlasName: LimitOrderAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/LimitOrderAtlas/Hd/LimitOrderAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/LimitOrderAtlas/Sd/LimitOrderAtlas
+  - AtlasName: CrazeOrderAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CrazeOrderAtlas/Hd/CrazeOrderAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CrazeOrderAtlas/Sd/CrazeOrderAtlas
+  - AtlasName: Card1Atlas
+    HdPath: SpriteAtlas/Card1Atlas/Hd/Card1Atlas
+    SdPath: SpriteAtlas/Card1Atlas/Sd/Card1Atlas
+  - AtlasName: Card2Atlas
+    HdPath: SpriteAtlas/Card2Atlas/Hd/Card2Atlas
+    SdPath: SpriteAtlas/Card2Atlas/Sd/Card2Atlas
+  - AtlasName: Card3Atlas
+    HdPath: SpriteAtlas/Card3Atlas/Hd/Card3Atlas
+    SdPath: SpriteAtlas/Card3Atlas/Sd/Card3Atlas
+  - AtlasName: Card4Atlas
+    HdPath: SpriteAtlas/Card4Atlas/Hd/Card4Atlas
+    SdPath: SpriteAtlas/Card4Atlas/Sd/Card4Atlas
+  - AtlasName: Card5Atlas
+    HdPath: SpriteAtlas/Card5Atlas/Hd/Card5Atlas
+    SdPath: SpriteAtlas/Card5Atlas/Sd/Card5Atlas
+  - AtlasName: Card6Atlas
+    HdPath: SpriteAtlas/Card6Atlas/Hd/Card6Atlas
+    SdPath: SpriteAtlas/Card6Atlas/Sd/Card6Atlas
+  - AtlasName: Card7Atlas
+    HdPath: SpriteAtlas/Card7Atlas/Hd/Card7Atlas
+    SdPath: SpriteAtlas/Card7Atlas/Sd/Card7Atlas
+  - AtlasName: Card8Atlas
+    HdPath: SpriteAtlas/Card8Atlas/Hd/Card8Atlas
+    SdPath: SpriteAtlas/Card8Atlas/Sd/Card8Atlas
+  - AtlasName: Card9Atlas
+    HdPath: SpriteAtlas/Card9Atlas/Hd/Card9Atlas
+    SdPath: SpriteAtlas/Card9Atlas/Sd/Card9Atlas
+  - AtlasName: Card10Atlas
+    HdPath: SpriteAtlas/Card10Atlas/Hd/Card10Atlas
+    SdPath: SpriteAtlas/Card10Atlas/Sd/Card10Atlas
+  - AtlasName: Card11Atlas
+    HdPath: SpriteAtlas/Card11Atlas/Hd/Card11Atlas
+    SdPath: SpriteAtlas/Card11Atlas/Sd/Card11Atlas
+  - AtlasName: Card12Atlas
+    HdPath: SpriteAtlas/Card12Atlas/Hd/Card12Atlas
+    SdPath: SpriteAtlas/Card12Atlas/Sd/Card12Atlas
+  - AtlasName: Card10012Atlas
+    HdPath: SpriteAtlas/Card10012Atlas/Hd/Card10012Atlas
+    SdPath: SpriteAtlas/Card10012Atlas/Sd/Card10012Atlas
+  - AtlasName: Card13Atlas
+    HdPath: SpriteAtlas/Card13Atlas/Hd/Card13Atlas
+    SdPath: SpriteAtlas/Card13Atlas/Sd/Card13Atlas
+  - AtlasName: Card14Atlas
+    HdPath: SpriteAtlas/Card14Atlas/Hd/Card14Atlas
+    SdPath: SpriteAtlas/Card14Atlas/Sd/Card14Atlas
+  - AtlasName: Card15Atlas
+    HdPath: SpriteAtlas/Card15Atlas/Hd/Card15Atlas
+    SdPath: SpriteAtlas/Card15Atlas/Sd/Card15Atlas
+  - AtlasName: Card16Atlas
+    HdPath: SpriteAtlas/Card16Atlas/Hd/Card16Atlas
+    SdPath: SpriteAtlas/Card16Atlas/Sd/Card16Atlas
+  - AtlasName: Card17Atlas
+    HdPath: SpriteAtlas/Card17Atlas/Hd/Card17Atlas
+    SdPath: SpriteAtlas/Card17Atlas/Sd/Card17Atlas
+  - AtlasName: Card18Atlas
+    HdPath: SpriteAtlas/Card18Atlas/Hd/Card18Atlas
+    SdPath: SpriteAtlas/Card18Atlas/Sd/Card18Atlas
+  - AtlasName: Card10018Atlas
+    HdPath: SpriteAtlas/Card10018Atlas/Hd/Card10018Atlas
+    SdPath: SpriteAtlas/Card10018Atlas/Sd/Card10018Atlas
+  - AtlasName: Card19Atlas
+    HdPath: SpriteAtlas/Card19Atlas/Hd/Card19Atlas
+    SdPath: SpriteAtlas/Card19Atlas/Sd/Card19Atlas
+  - AtlasName: Card10019Atlas
+    HdPath: SpriteAtlas/Card10019Atlas/Hd/Card10019Atlas
+    SdPath: SpriteAtlas/Card10019Atlas/Sd/Card10019Atlas
+  - AtlasName: Card20Atlas
+    HdPath: SpriteAtlas/Card20Atlas/Hd/Card20Atlas
+    SdPath: SpriteAtlas/Card20Atlas/Sd/Card20Atlas
+  - AtlasName: Card10020Atlas
+    HdPath: SpriteAtlas/Card10020Atlas/Hd/Card10020Atlas
+    SdPath: SpriteAtlas/Card10020Atlas/Sd/Card10020Atlas
+  - AtlasName: Card21Atlas
+    HdPath: SpriteAtlas/Card21Atlas/Hd/Card21Atlas
+    SdPath: SpriteAtlas/Card21Atlas/Sd/Card21Atlas
+  - AtlasName: Card10021Atlas
+    HdPath: SpriteAtlas/Card10021Atlas/Hd/Card10021Atlas
+    SdPath: SpriteAtlas/Card10021Atlas/Sd/Card10021Atlas
+  - AtlasName: CardMainAtlas
+    HdPath: SpriteAtlas/CardMainAtlas/Hd/CardMainAtlas
+    SdPath: SpriteAtlas/CardMainAtlas/Sd/CardMainAtlas
+  - AtlasName: CardCollectionActivityAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CardCollectionActivityAtlas/Hd/CardCollectionActivityAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CardCollectionActivityAtlas/Sd/CardCollectionActivityAtlas
+  - AtlasName: Easter2024Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/Easter2024Atlas/Hd/Easter2024Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/Easter2024Atlas/Sd/Easter2024Atlas
+  - AtlasName: GiftBagBuyBetterAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagBuyBetterAtlas/Hd/GiftBagBuyBetterAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagBuyBetterAtlas/Sd/GiftBagBuyBetterAtlas
+  - AtlasName: GiftBagSendOneAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagSendOneAtlas/Hd/GiftBagSendOneAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagSendOneAtlas/Sd/GiftBagSendOneAtlas
+  - AtlasName: SnakeLadderAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/SnakeLadderAtlas/Hd/SnakeLadderAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/SnakeLadderAtlas/Sd/SnakeLadderAtlas
+  - AtlasName: ExtraOrderRewardCouponAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ExtraOrderRewardCouponAtlas/Hd/ExtraOrderRewardCouponAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ExtraOrderRewardCouponAtlas/Sd/ExtraOrderRewardCouponAtlas
+  - AtlasName: ShopExtraRewardAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ShopExtraRewardAtlas/Hd/ShopExtraRewardAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ShopExtraRewardAtlas/Sd/ShopExtraRewardAtlas
+  - AtlasName: ThemeDecorationllllllDefaultAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllDefaultAtlas/Hd/ThemeDecorationllllllDefaultAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllDefaultAtlas/Sd/ThemeDecorationllllllDefaultAtlas
+  - AtlasName: SlotMachineAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/SlotMachineAtlas/Hd/SlotMachineAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/SlotMachineAtlas/Sd/SlotMachineAtlas
+  - AtlasName: TMWinPrizeAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TMatch/TMWinPrizeAtlas/Hd/TMWinPrizeAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TMatch/TMWinPrizeAtlas/Sd/TMWinPrizeAtlas
+  - AtlasName: MonopolyAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/MonopolyAtlas/Hd/MonopolyAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/MonopolyAtlas/Sd/MonopolyAtlas
+  - AtlasName: CommonResourceLeaderBoardllllllDefaultAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CommonResourceLeaderBoardllllllDefaultAtlas/Hd/CommonResourceLeaderBoardllllllDefaultAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CommonResourceLeaderBoardllllllDefaultAtlas/Sd/CommonResourceLeaderBoardllllllDefaultAtlas
+  - AtlasName: TreasureMapAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TreasureMapAtlas/Hd/TreasureMapAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TreasureMapAtlas/Sd/TreasureMapAtlas
+  - AtlasName: TreasureHuntAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TreasureHuntAtlas/Hd/TreasureHuntAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TreasureHuntAtlas/Sd/TreasureHuntAtlas
+  - AtlasName: ExtraEnergyAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ExtraEnergyAtlas/Hd/ExtraEnergyAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ExtraEnergyAtlas/Sd/ExtraEnergyAtlas
+  - AtlasName: MatreshkasAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/MatreshkasAtlas/Hd/MatreshkasAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/MatreshkasAtlas/Sd/MatreshkasAtlas
+  - AtlasName: TurntableAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TurntableAtlas/Hd/TurntableAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TurntableAtlas/Sd/TurntableAtlas
+  - AtlasName: DiamondRewardAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/DiamondRewardAtlas/Hd/DiamondRewardAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/DiamondRewardAtlas/Sd/DiamondRewardAtlas
+  - AtlasName: KeepPetAtlas
+    HdPath: SpriteAtlas/KeepPetAtlas/Hd/KeepPetAtlas
+    SdPath: SpriteAtlas/KeepPetAtlas/Sd/KeepPetAtlas
+  - AtlasName: OptionalGiftAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/OptionalGiftAtlas/Hd/OptionalGiftAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/OptionalGiftAtlas/Sd/OptionalGiftAtlas
+  - AtlasName: DonutAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/DonutAtlas/Hd/DonutAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/DonutAtlas/Sd/DonutAtlas
+  - AtlasName: GiftBagProgressAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagProgressAtlas/Hd/GiftBagProgressAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagProgressAtlas/Sd/GiftBagProgressAtlas
+  - AtlasName: ButterflyWorkShopAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ButterflyWorkShopAtlas/Hd/ButterflyWorkShopAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ButterflyWorkShopAtlas/Sd/ButterflyWorkShopAtlas
+  - AtlasName: ThemeDecorationllllllFranceAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllFranceAtlas/Hd/ThemeDecorationllllllFranceAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllFranceAtlas/Sd/ThemeDecorationllllllFranceAtlas
+  - AtlasName: GiftBagDoubleAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagDoubleAtlas/Hd/GiftBagDoubleAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagDoubleAtlas/Sd/GiftBagDoubleAtlas
+  - AtlasName: GardenTreasureAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GardenTreasureAtlas/Hd/GardenTreasureAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GardenTreasureAtlas/Sd/GardenTreasureAtlas
+  - AtlasName: BlueBlockAtlas
+    HdPath: SpriteAtlas/MiniGame/BlueBlock/Hd/BlueBlockAtlas
+    SdPath: SpriteAtlas/MiniGame/BlueBlock/Sd/BlueBlockAtlas
+  - AtlasName: MixMasterAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/MixMasterAtlas/Hd/MixMasterAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/MixMasterAtlas/Sd/MixMasterAtlas
+  - AtlasName: SaveTheWhalesAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/SaveTheWhalesAtlas/Hd/SaveTheWhalesAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/SaveTheWhalesAtlas/Sd/SaveTheWhalesAtlas
+  - AtlasName: TurtlePangAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TurtlePangAtlas/Hd/TurtlePangAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TurtlePangAtlas/Sd/TurtlePangAtlas
+  - AtlasName: StarrySkyCompassAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/StarrySkyCompassAtlas/Hd/StarrySkyCompassAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/StarrySkyCompassAtlas/Sd/StarrySkyCompassAtlas
+  - AtlasName: BlindBoxCommonAtlas
+    HdPath: SpriteAtlas/BlindBox/BlindBoxCommonAtlas/Hd/BlindBoxCommonAtlas
+    SdPath: SpriteAtlas/BlindBox/BlindBoxCommonAtlas/Sd/BlindBoxCommonAtlas
+  - AtlasName: BlindBoxTheme1Atlas
+    HdPath: SpriteAtlas/BlindBox/BlindBoxTheme1Atlas/Hd/BlindBoxTheme1Atlas
+    SdPath: SpriteAtlas/BlindBox/BlindBoxTheme1Atlas/Sd/BlindBoxTheme1Atlas
+  - AtlasName: BlindBoxTheme2Atlas
+    HdPath: SpriteAtlas/BlindBox/BlindBoxTheme2Atlas/Hd/BlindBoxTheme2Atlas
+    SdPath: SpriteAtlas/BlindBox/BlindBoxTheme2Atlas/Sd/BlindBoxTheme2Atlas
+  - AtlasName: BlindBoxTheme3Atlas
+    HdPath: SpriteAtlas/BlindBox/BlindBoxTheme3Atlas/Hd/BlindBoxTheme3Atlas
+    SdPath: SpriteAtlas/BlindBox/BlindBoxTheme3Atlas/Sd/BlindBoxTheme3Atlas
+  - AtlasName: BlindBoxTheme4Atlas
+    HdPath: SpriteAtlas/BlindBox/BlindBoxTheme4Atlas/Hd/BlindBoxTheme4Atlas
+    SdPath: SpriteAtlas/BlindBox/BlindBoxTheme4Atlas/Sd/BlindBoxTheme4Atlas
+  - AtlasName: BlindBoxTheme5Atlas
+    HdPath: SpriteAtlas/BlindBox/BlindBoxTheme5Atlas/Hd/BlindBoxTheme5Atlas
+    SdPath: SpriteAtlas/BlindBox/BlindBoxTheme5Atlas/Sd/BlindBoxTheme5Atlas
+  - AtlasName: TotalRechargeAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TotalRechargeAtlas/Hd/TotalRechargeAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TotalRechargeAtlas/Sd/TotalRechargeAtlas
+  - AtlasName: NewDailyPackageExtraRewardllllllSkin1Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/NewDailyPackageExtraRewardllllllSkin1Atlas/Hd/NewDailyPackageExtraRewardllllllSkin1Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/NewDailyPackageExtraRewardllllllSkin1Atlas/Sd/NewDailyPackageExtraRewardllllllSkin1Atlas
+  - AtlasName: NewDailyPackageExtraRewardllllllSkin2Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/NewDailyPackageExtraRewardllllllSkin2Atlas/Hd/NewDailyPackageExtraRewardllllllSkin2Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/NewDailyPackageExtraRewardllllllSkin2Atlas/Sd/NewDailyPackageExtraRewardllllllSkin2Atlas
+  - AtlasName: ZumaAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ZumaAtlas/Hd/ZumaAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ZumaAtlas/Sd/ZumaAtlas
+  - AtlasName: CardCollectionReopenAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CardCollectionReopenAtlas/Hd/CardCollectionReopenAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CardCollectionReopenAtlas/Sd/CardCollectionReopenAtlas
+  - AtlasName: ThemeDecorationllllllTurkeyAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllTurkeyAtlas/Hd/ThemeDecorationllllllTurkeyAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllTurkeyAtlas/Sd/ThemeDecorationllllllTurkeyAtlas
+  - AtlasName: ThemeDecorationllllllValentineDayAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllValentineDayAtlas/Hd/ThemeDecorationllllllValentineDayAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllValentineDayAtlas/Sd/ThemeDecorationllllllValentineDayAtlas
+  - AtlasName: ThemeDecorationllllllMusicAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllMusicAtlas/Hd/ThemeDecorationllllllMusicAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllMusicAtlas/Sd/ThemeDecorationllllllMusicAtlas
+  - AtlasName: KeepPetTurkeyAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/KeepPetTurkeyAtlas/Hd/KeepPetTurkeyAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/KeepPetTurkeyAtlas/Sd/KeepPetTurkeyAtlas
+  - AtlasName: KapibalaAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/KapibalaAtlas/Hd/KapibalaAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/KapibalaAtlas/Sd/KapibalaAtlas
+  - AtlasName: LuckyGoldenEggAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/LuckyGoldenEggAtlas/Hd/LuckyGoldenEggAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/LuckyGoldenEggAtlas/Sd/LuckyGoldenEggAtlas
+  - AtlasName: JumpGridAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/JumpGridAtlas/Hd/JumpGridAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/JumpGridAtlas/Sd/JumpGridAtlas
+  - AtlasName: KapiScrewAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/KapiScrewAtlas/Hd/KapiScrewAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/KapiScrewAtlas/Sd/KapiScrewAtlas
+  - AtlasName: JungleAdventureAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/JungleAdventureAtlas/Hd/JungleAdventureAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/JungleAdventureAtlas/Sd/JungleAdventureAtlas
+  - AtlasName: BalloonRacingAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/BalloonRacingAtlas/Hd/BalloonRacingAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/BalloonRacingAtlas/Sd/BalloonRacingAtlas
+  - AtlasName: CollectStoneAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/CollectStoneAtlas/Hd/CollectStoneAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/CollectStoneAtlas/Sd/CollectStoneAtlas
+  - AtlasName: RabbitRacingAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/RabbitRacingAtlas/Hd/RabbitRacingAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/RabbitRacingAtlas/Sd/RabbitRacingAtlas
+  - AtlasName: ScrewAtlas
+    HdPath: Screw/Atlas/ScrewAtlas/Hd/ScrewAtlas
+    SdPath: Screw/Atlas/ScrewAtlas/Sd/ScrewAtlas
+  - AtlasName: ScrewCommonAtlas
+    HdPath: Screw/Atlas/ScrewCommonAtlas/Hd/ScrewCommonAtlas
+    SdPath: Screw/Atlas/ScrewCommonAtlas/Sd/ScrewCommonAtlas
+  - AtlasName: ColorScrewAtlas
+    HdPath: Screw/Atlas/ColorScrewAtlas/Hd/ColorScrewAtlas
+    SdPath: Screw/Atlas/ColorScrewAtlas/Sd/ColorScrewAtlas
+  - AtlasName: ColorScrewAtlas
+    HdPath: Screw/Atlas/ColorScrewAtlas/Hd/ColorScrewAtlas
+    SdPath: Screw/Atlas/ColorScrewAtlas/Sd/ColorScrewAtlas
+  - AtlasName: ColorScrewAtlas
+    HdPath: Screw/Atlas/ColorScrewAtlas/Hd/ColorScrewAtlas
+    SdPath: Screw/Atlas/ColorScrewAtlas/Sd/ColorScrewAtlas
+  - AtlasName: ScrewFeatureAtlas
+    HdPath: Screw/Atlas/ScrewFeatureAtlas/Hd/ScrewFeatureAtlas
+    SdPath: Screw/Atlas/ScrewFeatureAtlas/Sd/ScrewFeatureAtlas
+  - AtlasName: ChristmasBlindBoxAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ChristmasBlindBoxAtlas/Hd/ChristmasBlindBoxAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ChristmasBlindBoxAtlas/Sd/ChristmasBlindBoxAtlas
+  - AtlasName: FishCultureAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/FishCultureAtlas/Hd/FishCultureAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/FishCultureAtlas/Sd/FishCultureAtlas
+  - AtlasName: DigTrenchNewAtlas
+    HdPath: DigTrenchNew/DigTrenchNewAtlas/Hd/DigTrenchNewAtlas
+    SdPath: DigTrenchNew/DigTrenchNewAtlas/Sd/DigTrenchNewAtlas
+  - AtlasName: DogPlayExtraRewardAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/DogPlayExtraRewardAtlas/Hd/DogPlayExtraRewardAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/DogPlayExtraRewardAtlas/Sd/DogPlayExtraRewardAtlas
+  - AtlasName: TileMatchAtlas
+    HdPath: TileMatch/SpriteAtlas/TileMatchAtlas/Hd/TileMatchAtlas
+    SdPath: TileMatch/SpriteAtlas/TileMatchAtlas/Sd/TileMatchAtlas
+  - AtlasName: KapiTileAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/KapiTileAtlas/Hd/KapiTileAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/KapiTileAtlas/Sd/KapiTileAtlas
+  - AtlasName: PhotoAlbumAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/PhotoAlbumAtlas/Hd/PhotoAlbumAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/PhotoAlbumAtlas/Sd/PhotoAlbumAtlas
+  - AtlasName: BiuBiuAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/BiuBiuAtlas/Hd/BiuBiuAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/BiuBiuAtlas/Sd/BiuBiuAtlas
+  - AtlasName: ParrotAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ParrotAtlas/Hd/ParrotAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ParrotAtlas/Sd/ParrotAtlas
+  - AtlasName: FlowerFieldAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/FlowerFieldAtlas/Hd/FlowerFieldAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/FlowerFieldAtlas/Sd/FlowerFieldAtlas
+  - AtlasName: GiftBagSendTwoAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagSendTwoAtlas/Hd/GiftBagSendTwoAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagSendTwoAtlas/Sd/GiftBagSendTwoAtlas
+  - AtlasName: GiftBagSendThreeAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagSendThreeAtlas/Hd/GiftBagSendThreeAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagSendThreeAtlas/Sd/GiftBagSendThreeAtlas
+  - AtlasName: GiftBagSend4Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagSend4Atlas/Hd/GiftBagSend4Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagSend4Atlas/Sd/GiftBagSend4Atlas
+  - AtlasName: GiftBagSend6Atlas
+    HdPath: SpriteAtlas/ActivityAtlas/GiftBagSend6Atlas/Hd/GiftBagSend6Atlas
+    SdPath: SpriteAtlas/ActivityAtlas/GiftBagSend6Atlas/Sd/GiftBagSend6Atlas
+  - AtlasName: ThemeDecorationllllllWaterParkAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllWaterParkAtlas/Hd/ThemeDecorationllllllWaterParkAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllWaterParkAtlas/Sd/ThemeDecorationllllllWaterParkAtlas
+  - AtlasName: ThemeDecorationllllllSportsFieldAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllSportsFieldAtlas/Hd/ThemeDecorationllllllSportsFieldAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/ThemeDecorationllllllSportsFieldAtlas/Sd/ThemeDecorationllllllSportsFieldAtlas
+  - AtlasName: MiniGameAtlas
+    HdPath: NewMiniGame/SpriteAtlas/MiniGameAtlas/Hd/MiniGameAtlas
+    SdPath: NewMiniGame/SpriteAtlas/MiniGameAtlas/Sd/MiniGameAtlas
+  - AtlasName: PillowWheelAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/PillowWheelAtlas/Hd/PillowWheelAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/PillowWheelAtlas/Sd/PillowWheelAtlas
+  - AtlasName: TrainOrderAtlas
+    HdPath: SpriteAtlas/ActivityAtlas/TrainOrderAtlas/Hd/TrainOrderAtlas
+    SdPath: SpriteAtlas/ActivityAtlas/TrainOrderAtlas/Sd/TrainOrderAtlas

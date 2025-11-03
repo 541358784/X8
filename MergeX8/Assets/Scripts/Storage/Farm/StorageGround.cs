@@ -1,0 +1,133 @@
+/************************************************
+ * Storage class : StorageGround
+ * This file is can not be modify !!!
+ * If there is some problem, ask bin.guo.
+ ************************************************/
+
+using System;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+
+namespace DragonU3DSDK.Storage
+{
+    [System.Serializable]
+    public class StorageGround : StorageBase
+    {
+        
+        // NODEID
+        [JsonProperty]
+        int id;
+        [JsonIgnore]
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                if(id != value)
+                {
+                    id = value;
+                    StorageManager.Instance.LocalVersion++;
+                    
+                    
+                }
+            }
+        }
+        // ---------------------------------//
+        
+        // 种子ID
+        [JsonProperty]
+        int seedId;
+        [JsonIgnore]
+        public int SeedId
+        {
+            get
+            {
+                return seedId;
+            }
+            set
+            {
+                if(seedId != value)
+                {
+                    seedId = value;
+                    StorageManager.Instance.LocalVersion++;
+                    
+                    
+                }
+            }
+        }
+        // ---------------------------------//
+        
+        // 成熟时间
+        [JsonProperty]
+        long ripeningTime;
+        [JsonIgnore]
+        public long RipeningTime
+        {
+            get
+            {
+                return ripeningTime;
+            }
+            set
+            {
+                if(ripeningTime != value)
+                {
+                    ripeningTime = value;
+                    StorageManager.Instance.LocalVersion++;
+                    
+                    
+                }
+            }
+        }
+        // ---------------------------------//
+        
+        // 开始时间
+        [JsonProperty]
+        long startTime;
+        [JsonIgnore]
+        public long StartTime
+        {
+            get
+            {
+                return startTime;
+            }
+            set
+            {
+                if(startTime != value)
+                {
+                    startTime = value;
+                    StorageManager.Instance.LocalVersion++;
+                    
+                    
+                }
+            }
+        }
+        // ---------------------------------//
+        
+        // CD总时间
+        [JsonProperty]
+        long cdTime;
+        [JsonIgnore]
+        public long CdTime
+        {
+            get
+            {
+                return cdTime;
+            }
+            set
+            {
+                if(cdTime != value)
+                {
+                    cdTime = value;
+                    StorageManager.Instance.LocalVersion++;
+                    
+                    
+                }
+            }
+        }
+        // ---------------------------------//
+        
+    }
+}

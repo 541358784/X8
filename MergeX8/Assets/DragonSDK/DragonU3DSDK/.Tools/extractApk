@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dir=$(dirname "$1")
+tempDir=$dir/_temp
+unzip -o "$1" -d "$tempDir"
+mv "$tempDir"/*.apk "${1/.apks/.apk}"
+touch "${1/.apks/.apk}"
+rm -rf "$tempDir"

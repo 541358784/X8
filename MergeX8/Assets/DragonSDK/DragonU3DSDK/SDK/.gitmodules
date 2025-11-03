@@ -1,0 +1,3 @@
+[submodule "HippoMasterPluginRepository"]
+	path = HippoPlugins/.plugins/master
+	url = git@github.com:FlyDragonGO/HippoPlugins.git

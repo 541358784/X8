@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Accepter la politique de confidentialité"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Pour continuer à jouer, vous devez confirmer que vous acceptez notre politique de confidentialité."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Politique de confidentialité"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Je suis d'accord"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Échec de la ressource, veuillez vérifier votre Internet."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Impossible de se connecter au serveur. S'il vous plait, vérifiez votre connexion internet."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Annuler"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "D'ACCORD"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "Recommencez"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Annuler"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Souhaitez-vous arrêter?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Vous avez ouvert le jeu sur un autre appareil. Pour jouer sur l'autre appareil, veuillez fermer ce jeu. Pour continuer à jouer ici, appuyez simplement sur «OK» et ce jeu redémarrera."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Veuillez mettre à jour votre application vers la dernière version et vérifier les récompenses de mise à jour par e-mail."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "Conseils"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Équipes de service"
+    }
+]

@@ -1,0 +1,439 @@
+{
+    /*
+	"FacebookSDK": {
+		"id":"Facebook@Unity",
+		"className":"FacebookSDKPlugin",
+		"services" : [3],
+		"appId":"643650916024135",
+		"scheme" : "fb643650916024135",
+		"platforms": {
+			"WebGL" : {
+				"className":"WebGLFacebookSDK",
+				"services": [2,3],
+				"xfbml": true,
+				"version": "v2.6"
+			}
+		}
+	},
+	*/
+	"UnityAds" : {
+		"id":"UnityAds",
+		"className":"UnityAdsPlugin",
+		"services":[4],
+		"platforms": {
+            "iOS": {
+                "gameId": "2845327"
+            },
+			"Android": {
+                "gameId": "2845325"
+			}
+		}
+	},
+  
+	"Admob": {
+		"id":"Admob",
+		"className":"AdmobPlugin",
+		"services" : [4],
+		"platforms": {
+			"iOS": {
+                "appid": "ca-app-pub-9219225308759825~3824007515",
+                "interstitialUnits": "ca-app-pub-9219225308759825/3205184129",
+                "video": "ca-app-pub-9219225308759825/7691224046"
+			},
+			"Android": {
+                "appid": "ca-app-pub-9219225308759825~8581224766",
+                "interstitialUnits": "ca-app-pub-9219225308759825/5823484893",
+                "video": "ca-app-pub-9219225308759825/3907767999"
+			}
+		}
+	},
+  
+	"AdColony": {
+		"id":"AdColony",
+		"services":[4],
+		"platforms": {
+			"iOS": {
+				"className":"HippoAdColonyPlugin",
+                "appId": "appf74a4ac1fb924a6bbb",
+                "zones": [ "vze03d727cdccc411a9f" ]
+			},
+			"Android": {
+				"__debug":true,
+				"className":"com.biglemon.adcolony.AdcolonyPlugin",
+                "appId": "appa47eeeb7c73c45ce9b",
+                "zones": [ "vz7eb9ea1e1c104a619b" ]
+			}
+		}
+	},
+	
+	"Vungle": {
+		"id":"Vungle",
+		"services":[4],
+		"platforms": {
+			"iOS": {
+				"className":"HippoVunglePlugin",
+				"appId":"59bbc8475d4296aa3b0003b0",
+				"placements":["DEFAULT33212"]
+			},
+			"Android": {
+				"__debug":true,
+				"className":"com.biglemon.vungle.VunglePlugin",
+				"appId":"59bbc8da0eb300bc3b00077f",
+				"placements":["DEFAULT45059"]
+			}
+		}
+	},
+	
+	"Chartboost": {
+		"id":"Chartboost",
+		"className":"ChartboostPlugin",
+		"services" : [4],
+		"weight" : 1,
+		"supportRewardVideo" : false,
+		"supportInterstitial" : true,
+		"platforms": {
+			"iOS": {
+                "appId": "5bbec52b6b890e09b4114fc7",
+                "appSecret": "d7aa103c0d3a959e1583780ca87d74323f84ad33",
+			},
+			"Android": {
+                "appId": "5bbec59a6b890e09ba722067",
+                "appSecret": "52e46bd501759e04ab6c4782ea41c6e96a4c4b61",
+			}
+		}
+	},
+    /*
+	"HockeyApp": {
+		"id":"HockeyApp",
+		"services" : [6],
+		"platforms" : {
+			"Android": {
+				"__debug" : true,
+				"appId":"3749d11fc43d4fe697c1c73c2ba98b96",
+				"className": "com.biglemon.hockapp.HockeyAppPlugin"
+			},
+			"iOS": {
+				"appId":"5ed1520fef6d46eb98a07ce91b4bf945",
+				"className": "HippoHockeyAppPlugin"
+			}
+		}
+	},*/
+	"IronSource": {
+		"id":"IronSource",
+		"className":"IronSourcePlugin",
+		"services" : [4],
+		"platforms": {
+			"Android":{
+                "appKey": "7dce4375"
+			},
+			"iOS":{
+                "appKey": "7dce7cfd"
+			}
+		}
+	},
+ 
+	"Adjust": {
+		"id":"Adjust",
+		"className":"AdjustPlugin",
+		"services" : [5],
+		"platforms":{
+			"iOS":{
+				"appToken" : "difdqy5x2eps",
+				"events" : {
+			      "social_login": "otdd0d",
+			      "purchase": "9xbjfo"
+				}
+			},
+			"Android":{
+				"appToken" : "h73pbg76x9mo",
+				"events" : {
+			      "social_login": "jrrh3u",
+			      "purchase": "5qs9qb"
+				}
+			}
+		}
+	},
+	 /*
+	"Flurry": {
+		"id":"Flurry",
+		"platforms" : {
+			"iOS" : {
+				"apiKey":"Z828ZXSPH2TFHPW8CJBZ",
+				"services":[5, 6],
+				"className":"HippoFlurryPlugin"
+			},
+			"Android" : {
+				"apiKey":"9FXRKMHZ9HQ7C3634TQX",
+				"services":[5],
+				"__debug":true,
+				"className":"com.biglemon.flurry.FlurryPlugin"
+			}
+		}
+	}, */
+	/*
+	"Default": {
+		"id":"DefaultPlugin",
+		"services" : [2],
+		"className" : "DefaultPlugin"
+	},
+	"OSUtility": {
+		"id": "NativeOSService",
+		"services": [1],
+		"platforms" : {
+			"iOS": {
+				"className":"HippoOSService"
+			},
+			"Android": {
+				"className":"com.biglemon.hippo.osutil.OSUtilPlugin",
+				"__debug":true
+			},
+			"WebGL": {
+				"className":"WebGLOSUtility"
+			}
+		}
+	},
+	"LineSDK": {
+		"id": "LineSDK",
+		"services": [3],
+		"appId": "1530125755",
+		"platforms" : {
+			"iOS": {
+				"className": "HippoLineSDKPlugin"
+			},
+			"Android": {
+				"__debug" : true,
+				"className": "com.biglemon.hippo.linesdk.LineSDKPlugin",
+			}
+		}
+	},*/
+	"IAP" : {
+		"id":"NativeIAPService",
+		"services": [2],
+		"platforms": {
+			"Android": {
+				"__debug" : true,
+				"className":"com.biglemon.hippo.googleplay.GPlayIAPPlugin" 
+			},
+			"iOS": {
+				"className":"AppStorePlugin",
+				"useOldReceiption" : true
+			}
+		}
+	},
+	"__metadata" : {
+			"platforms": {
+				"iOS": {
+					"adsStrategy":{
+						"className":"AdsStandardStrategy",
+						"allUnits":[
+							{
+								"unitId":"DEFAULT33212",
+								"pluginId":"Vungle",
+								"type":1,
+								"weight":4,
+								"delayToNextCache": 6, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"vzbb6f4ba644c8427fb8",
+								"pluginId":"AdColony",
+								"type":1,
+								"weight":4,
+								"delayToNextCache": 6, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"video",
+								"pluginId":"UnityAds",
+								"type":1,
+								"weight":3,
+								"delayToNextCache": 6, "tryCacheTimes": 1
+							},
+							{
+								"unitId":"IronSourceInterstitial",
+								"pluginId":"IronSource",
+								"type":1,
+								"weight":2,
+								"delayToNextCache": 5, "tryCacheTimes": 2
+							},
+							{
+								"unitId":"rewardedVideo",
+								"pluginId":"UnityAds",
+								"type":2,
+								"weight":2,
+								"delayToNextCache": 5, "tryCacheTimes": 2
+							},
+							{
+								"unitId":"IronSourceRewardVideo",
+								"pluginId":"IronSource",
+								"type":2,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 1
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/5075102718",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/3682129998",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/9711872793",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/8207219438",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/6455154062",
+								"pluginId":"Admob",
+								"type":2,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							}						
+						]
+					},
+				},
+				"Android" : {
+					"adsStrategy":{
+						"className":"AdsStandardStrategy",
+						"allUnits":[
+							{
+								"unitId":"DEFAULT45059",
+								"pluginId":"Vungle",
+								"type":1,
+								"weight":4,
+								"delayToNextCache": 6, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"vz5080361e34f04e38b7",
+								"pluginId":"AdColony",
+								"type":1,
+								"weight":4,
+								"delayToNextCache": 6, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"video",
+								"pluginId":"UnityAds",
+								"type":1,
+								"weight":3,
+								"delayToNextCache": 6, "tryCacheTimes": 1
+							},
+							{
+								"unitId":"IronSourceInterstitial",
+								"pluginId":"IronSource",
+								"type":1,
+								"weight":2,
+								"delayToNextCache": 5, "tryCacheTimes": 2
+							},
+							{
+								"unitId":"rewardedVideo",
+								"pluginId":"UnityAds",
+								"type":2,
+								"weight":2,
+								"delayToNextCache": 5, "tryCacheTimes": 2
+							},
+							{
+								"unitId":"IronSourceRewardVideo",
+								"pluginId":"IronSource",
+								"type":2,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 1
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/6427233908",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/9289679893",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/7903967107",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/6207742051",
+								"pluginId":"Admob",
+								"type":1,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							},
+							{
+								"unitId":"ca-app-pub-6945262572122118/3143784383",
+								"pluginId":"Admob",
+								"type":2,
+								"weight":1,
+								"delayToNextCache": 5, "tryCacheTimes": 3
+							}
+						]
+					}
+				}
+			},
+			"google-services" : {
+              "project_info": {
+                "project_number": "953405301046",
+                "firebase_url": "https://decoration-218907.firebaseio.com",
+                "project_id": "decoration-218907",
+                "storage_bucket": "decoration-218907.appspot.com"
+              },
+              "client": [
+                {
+                  "client_info": {
+                    "mobilesdk_app_id": "1:953405301046:android:366ec54cd567c32a",
+                    "android_client_info": {
+                      "package_name": "com.dragonplus.decoration"
+                    }
+                  },
+                  "oauth_client": [
+                    {
+                      "client_id": "953405301046-4b74q0sj2h00hm7bt9o4ou1gt9pqibpm.apps.googleusercontent.com",
+                      "client_type": 3
+                    }
+                  ],
+                  "api_key": [
+                    {
+                      "current_key": "AIzaSyCgSnhpPToo3dXFqSPyaglCPKsLHHIAjd8"
+                    }
+                  ],
+                  "services": {
+                    "analytics_service": {
+                      "status": 1
+                    },
+                    "appinvite_service": {
+                      "status": 1,
+                      "other_platform_oauth_client": []
+                    },
+                    "ads_service": {
+                      "status": 2
+                    }
+                  },
+                  "admob_app_id": "ca-app-pub-9219225308759825~8581224766"
+                }
+              ],
+              "configuration_version": "1"
+			}
+		},
+	}
+}

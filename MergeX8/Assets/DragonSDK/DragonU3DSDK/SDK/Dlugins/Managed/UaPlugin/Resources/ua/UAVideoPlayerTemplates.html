@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <title>Video</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+        }
+
+        img {
+            pointer-events: none;
+        }
+
+        #video-container {
+            width: 100%;
+            height: 100%;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #ad-click-mask {
+            position: fixed; /* 固定定位，确保元素固定在视口 */
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #countdown-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #countdown-button {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2; /* Above the SVG */
+        }
+
+        svg {
+            position: absolute;
+            transform: rotate(-90deg);
+            z-index: 1; /* Below the button */
+        }
+
+        circle {
+            fill: none;
+            stroke: rgba(0, 0, 0, 0.7);
+            stroke-width: 3;
+        }
+
+        .progress-bar {
+            stroke: #fff;
+            transition: stroke-dashoffset 0.3s linear;
+        }
+    </style>
+    <link href="video-js.min.css" rel="stylesheet">
+    <script src="video.min.js"></script>
+</head>
+<body>
+<div id="video-container">
+    <video id="ad-video"
+           class="video-js"
+           width="100%"
+           height="100%"
+           preload="auto">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div id="ad-click-mask">
+</div>
+<div id="countdown-container" style="display: none">
+    <svg width="50" height="50">
+        <circle cx="25" cy="25" r="16" class="progress-background"/>
+        <circle cx="25" cy="25" r="16" class="progress-bar" stroke-dasharray="93,93" stroke-dashoffset="93"/>
+    </svg>
+    <button id="countdown-button"></button>
+</div>
+<div id="impression-container" style="display: none">
+</div>
+<script>
+    const countdownButton = document.getElementById('countdown-button');
+    const countdownContainer = document.getElementById('countdown-container');
+    const impressionContainer = document.getElementById('impression-container');
+    const progressBar = document.querySelector('.progress-bar');
+    const adClickMask = document.getElementById('ad-click-mask');
+    const video = document.getElementById('ad-video');
+    const videoSource = document.createElement("source");
+    const totalDashArray = 94;
+
+    let started = false;
+    let countdownTimer;
+    let duration = 0;
+    let countdown = 0;
+    let ended = false;
+
+    let clickLink = null;
+
+    video.appendChild(videoSource);
+    video.setAttribute('poster', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAC4jAAAuIwF4pT92AAAADUlEQVQIW2NgYGD4DwABBAEAwS2OUAAAAABJRU5ErkJggg==');
+
+    function onAdsShown() {
+        window.location.href = "uniwebview://OnUASdkAdsShown";
+    }
+
+    function onAdsClosed() {
+        window.location.href = "uniwebview://OnUASdkAdsClosed";
+    }
+
+    function onAdsClicked() {
+        window.location.href = "uniwebview://OnUASdkAdsClicked";
+    }
+
+    function onAdsRewarded() {
+        window.location.href = "uniwebview://OnUASdkAdsRewarded";
+    }
+
+    function initializeCountdown() {
+        if (started) {
+            return;
+        }
+
+        started = true;
+
+        countdownContainer.style.display = "";
+
+        countdown = duration;
+
+        countdownButton.textContent = `${Math.floor(countdown)}s`;
+
+        progressBar.style.strokeDasharray = totalDashArray + "," + totalDashArray;
+        progressBar.style.strokeDashoffset = "0";
+
+        onAdsShown();
+    }
+
+    function pauseCountdown() {
+        if (countdownTimer === null || countdownTimer === undefined) {
+            return;
+        }
+
+        clearInterval(countdownTimer);
+        countdownTimer = null;
+    }
+
+    function resumeCountdown() {
+        if (countdown <= 0) {
+            return;
+        }
+
+        if (countdownTimer !== null || countdownTimer !== undefined) {
+            clearInterval(countdownTimer);
+            countdownTimer = null;
+        }
+
+        countdownTimer = setInterval(() => {
+            countdown--;
+            countdownButton.textContent = `${Math.floor(countdown)}s`;
+
+            progressBar.style.strokeDashoffset = (totalDashArray - (totalDashArray * (countdown / duration))).toString();
+
+            if (countdown <= 0) {
+                progressBar.style.display = "none";
+
+                clearInterval(countdownTimer);
+
+                countdownButton.textContent = 'X';
+                countdownButton.disabled = false;
+
+                onAdsRewarded();
+            }
+        }, 1000);
+    }
+
+    function setup() {
+        countdownContainer.style.display = "none";
+
+        countdownButton.addEventListener('click', () => {
+            if (countdown <= 0) {
+                onAdsClosed();
+            }
+        });
+
+        adClickMask.addEventListener('click', () => {
+            onAdsClicked();
+
+            setTimeout(() => {
+                if (clickLink) {
+                    clickLink.click();
+                }
+            }, 10);
+        })
+
+        countdownButton.disabled = true;
+    }
+
+    function fireClick(elem) {
+        if (typeof elem == "string") elem = document.getElementById(elem);
+        if (!elem) return;
+
+        elem.click();
+
+        const player = videojs.players['ad-video'];
+        if (player) {
+            player.play();
+        }
+    }
+
+    function playVideo(path, durationInSeconds, muted, impressionUrl, clickUrl) {
+        duration = durationInSeconds;
+        ended = false;
+
+        videoSource.setAttribute('src', path);
+        videoSource.setAttribute('type', 'video/mp4');
+        
+        const options = {
+            autoplay: true,
+            width: window.innerWidth,
+            height: window.innerHeight,
+            loop: false,
+            disablePictureInPicture: true,
+            enableDocumentPictureInPicture: false,
+            playsinline: true,
+            controls: false,
+        };
+
+        const player = videojs('ad-video', options, function onPlayerReady() {
+            this.play();
+
+            this.on('ended', function () {
+            });
+
+            this.on('play', function () {
+                initializeCountdown();
+                resumeCountdown();
+            })
+
+            this.on('pause', function () {
+                if (!ended) {
+                    pauseCountdown();
+                }
+            })
+
+            this.on('ended', function() {
+                ended = true;
+
+                resumeCountdown();
+            });
+        });
+
+        if (muted) {
+            player.autoplay('muted');
+        } else {
+            player.autoplay(true);
+        }
+        player.play();
+
+        setTimeout(() => {
+            const impressionImage = document.createElement('img');
+            impressionImage.src = atob(impressionUrl);
+            impressionContainer.appendChild(impressionImage);
+
+            const clickLinkElement = document.createElement('a');
+            clickLinkElement.href = atob(clickUrl);
+            impressionContainer.appendChild(clickLinkElement);
+
+            clickLink = clickLinkElement;
+        }, 10);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        setup();
+    });
+
+    document.body.onselectstart = document.body.ondrag = function () {
+        return false;
+    }
+
+    document.addEventListener('contextmenu', function (event) {
+        const e = event || window.event;
+        // 阻止默认行为兼容写法
+        if (e.preventDefault) {
+            e.preventDefault() // w3c
+        } else {
+            e.returnValue = false // ie
+        }
+    });
+
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+
+    let playingOnHide = false;
+    function OnApplicationPause(pauseStatus) {
+        let player = videojs.getPlayer('ad-video');
+        if (pauseStatus) {
+            playingOnHide = !player.paused();
+            player.pause();
+        } else if (playingOnHide) {
+            playingOnHide = false;
+            if (countdown > 0) {
+                player.play();
+            }
+        }
+    }
+</script>
+</body>
+</html>

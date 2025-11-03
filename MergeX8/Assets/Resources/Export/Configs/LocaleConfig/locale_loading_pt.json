@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Aceitar política de privacidade"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Para continuar jogando, você precisa confirmar que concorda com nossa Política de Privacidade."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Política de Privacidade"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Eu concordo"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Falha ao baixar o recurso, verifique sua internet."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Falhou ao conectar com o servidor. Por favor, verifique sua conexão à internet."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "cancelar"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "OK"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "Tentar novamente"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "cancelar"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Você gostaria de sair?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Você abriu o jogo em outro dispositivo. Para jogar em outro dispositivo, feche este jogo. Para continuar jogando aqui, basta tocar em 'OK' e este jogo será reiniciado."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Atualize seu aplicativo para a versão mais recente e reinicie o jogo."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "Pontas"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Equipes de Atendimento"
+    }
+]

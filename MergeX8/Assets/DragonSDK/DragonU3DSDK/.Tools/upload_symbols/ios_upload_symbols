@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dir=$(dirname $0)/../../../../../iOS/build
+$dir/Pods/FirebaseCrashlytics/upload-symbols -gsp $dir/GoogleService-Info.plist -p ios "$1"

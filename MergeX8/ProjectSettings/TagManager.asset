@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - DoScale
+  - ResetAnim
+  - Except
+  - Export
+  - Jewel
+  - CrashCrateWalls
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 3d_light
+  - Water
+  - UI
+  - 
+  - Layer0
+  - Layer1
+  - Layer2
+  - Layer3
+  - Layer4
+  - Layer5
+  - Layer6
+  - Layer7
+  - Layer8
+  - Layer9
+  - TileMatch
+  - Grid
+  - HightLight
+  - GameBG
+  - Clicker
+  - TMatchItem
+  - TMatchFloor
+  - TMatchWall
+  - TMatchCollector
+  - TMatchCeiling
+  - DigTrench
+  - DigTrenchUI
+  - Fish
+  - Zuma
+  - Ball
+  m_SortingLayers:
+  - name: Bottom
+    uniqueID: 2231773741
+    locked: 0
+  - name: Sea
+    uniqueID: 287320005
+    locked: 0
+  - name: Sand
+    uniqueID: 1150521677
+    locked: 0
+  - name: Street
+    uniqueID: 2964371867
+    locked: 0
+  - name: Sidewalk
+    uniqueID: 2457810789
+    locked: 0
+  - name: Ground
+    uniqueID: 2470080339
+    locked: 0
+  - name: GrassUp
+    uniqueID: 2151456399
+    locked: 0
+  - name: Roadside
+    uniqueID: 3685131403
+    locked: 0
+  - name: FlowerGrass
+    uniqueID: 1471977469
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3158190045
+    locked: 0
+  - name: Guide
+    uniqueID: 762831637
+    locked: 0
+  - name: Effect
+    uniqueID: 803190669
+    locked: 0
+  - name: Top
+    uniqueID: 211189587
+    locked: 0

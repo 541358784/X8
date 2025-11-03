@@ -1,0 +1,29 @@
+{
+    "readme": [
+        [ "说明", "AssetConfigController配置中初始包外的资源必须在ABRes_Group配置中匹配到" ],
+        [ "配置", "一行就是一个包外需要下载的ab资源列表，比如一个Map，一个World或一个活动需要的所有ab资源" ],
+        [ "备注", "(.+)，(.*)，（\\d+)等带括号的为捕获通配符，每一行配置要么都没有捕获通配符，要么都有一个捕获通配符且捕获的值必须要一样" ],
+        [ "_Example", "配置样例" ],
+        [ "ABRes_Group", "实际的配置" ]
+    ],
+
+    "_Example": [
+        [ "如果World比较独立，可以参考以下捕获通配符" ],
+        [ "UI/World(\\d+)", "SpriteAtlas/World(\\d+)Atlas", "SpriteAtlas/World(\\d+)BgAtlas", "Audios/BGM/bgm_world(\\d+)" ],
+
+        [ "如果Map会引用对应World的资源，可以为每个World单独配置，另外加上对应Map的资源(正常情况只带Map的预制资源就可以了，因为是Map的预制引用World的资源)" ],
+        [ "UI/Map[1-4]", "UI/World1", "UI/World1/world.*", "SpriteAtlas/World1\\D.*", "Audios/BGM/bgm_World1" ],
+        [ "UI/Map[8-9]", "UI/Map10", "UI/World3", "UI/World3/world.*", "SpriteAtlas/World3\\D.*", "Audios/BGM/bgm_World3" ],
+
+        [ "正常情况Map或Home等可以参考以下捕获通配符" ],
+        [ "UI/Map(\\d+)", "SpriteAtlas/Map(\\d+)Atlas", "SpriteAtlas/Map(\\d+)GameAtlas", "Audios/BGM/bgm_map(\\d+)" ],
+
+        [ "活动相关谨慎使用通配符，因为很多活动的名字长得很像，比如CK1有很多个PiggyBank" ],
+        [ ".*PiggyBank.*" ],
+        [ "UI/ActivityFund", "SpriteAtlas/FundAtlas" ]
+    ],
+
+    "ABRes_Group": [
+
+    ]
+}

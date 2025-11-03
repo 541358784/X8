@@ -1,0 +1,69 @@
+
+Hudie.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+die1
+  rotate: true
+  xy: 0, 0
+  size: 38, 87
+  orig: 38, 87
+  offset: 0, 0
+  index: -1
+die1_1
+  rotate: true
+  xy: 88, 0
+  size: 38, 87
+  orig: 38, 87
+  offset: 0, 0
+  index: -1
+die1_2
+  rotate: false
+  xy: 195, 163
+  size: 38, 87
+  orig: 38, 87
+  offset: 0, 0
+  index: -1
+die2
+  rotate: false
+  xy: 0, 145
+  size: 64, 105
+  orig: 82, 105
+  offset: 0, 0
+  index: -1
+die2_1
+  rotate: false
+  xy: 65, 145
+  size: 64, 105
+  orig: 82, 105
+  offset: 0, 0
+  index: -1
+die2_2
+  rotate: false
+  xy: 0, 39
+  size: 64, 105
+  orig: 82, 105
+  offset: 0, 0
+  index: -1
+die3
+  rotate: false
+  xy: 65, 39
+  size: 64, 105
+  orig: 82, 105
+  offset: 0, 0
+  index: -1
+die3_1
+  rotate: false
+  xy: 130, 39
+  size: 64, 105
+  orig: 82, 105
+  offset: 0, 0
+  index: -1
+die3_2
+  rotate: false
+  xy: 130, 145
+  size: 64, 105
+  orig: 82, 105
+  offset: 0, 0
+  index: -1

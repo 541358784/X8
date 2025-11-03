@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "개인 정보 보호 정책을 수락하십시오"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "계속 플레이하려면 개인 정보 보호 정책에 동의하는지 확인해야합니다."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "개인정보처리방침"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "나는 동의한다"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "리소스를 다운로드하지 못했습니다. 인터넷을 확인하십시오."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "서버에 연결하지 못했습니다. 인터넷 연결을 확인하십시오."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "취소"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "좋아요"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "다시 해 보다"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "취소"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "그만 두시겠습니까?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "다른 장치에서 게임을 열었습니다. 다른 장치에서 플레이하려면이 게임을 닫으십시오. 여기서 계속 플레이하려면 'Ok'을 누르면이 게임이 다시 시작됩니다."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "앱을 최신 버전으로 업데이트하시고, 이메일로 업데이트 보상을 확인해 주세요."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "팁"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "봉사팀"
+    }
+]

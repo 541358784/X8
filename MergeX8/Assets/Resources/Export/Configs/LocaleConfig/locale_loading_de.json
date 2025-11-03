@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Datenschutzvereinbarung"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Bevor Sie weiterspielen, müssen Sie unserer Datenschutzvereinbarung zustimmen"
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Datenschutzrichtlinie"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Zustimmen"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Keine Internetverbindung. Bitte überprüfen Sie die Verbindung und versuchen Sie es erneut."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Keine Internetverbindung. Bitte verbinden Sie sich mit dem Internet und versuchen Sie es erneut"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Abbrechen"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "In Ordnung"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "Noch einmal"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Abbrechen"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Möchten Sie das Spiel verlassen?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Das Spiel ist auch auf einem anderen Gerät geöffnet. Wenn Sie auf einem anderen Gerät spielen möchten, schließen Sie dieses Spiel. Wenn Sie jetzt weiterspielen möchten, klicken Sie auf \"Ok\", wir werden das Spiel neu starten."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Bitte aktualisieren Sie Ihre App auf die neueste Version und prüfen Sie die Update-Belohnungen per E-Mail."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "Hinweis"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Serviceteams"
+    }
+]

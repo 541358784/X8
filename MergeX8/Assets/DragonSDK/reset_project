@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $(dirname $0)
+rm -rf DragonU3DSDK
+git reset --hard

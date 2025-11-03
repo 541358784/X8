@@ -1,0 +1,146 @@
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CGSubtitleParser
+{
+    enum ReadState
+    {
+        Index,
+        Time,
+        Text
+    }
+
+    List<SubtitleBlock> m_Subtitles;
+    public CGSubtitleParser(string textAssetResourcePath)
+    {
+        var text = Resources.Load<TextAsset>(textAssetResourcePath);
+        Load(text);
+    }
+
+    public CGSubtitleParser(TextAsset textAsset)
+    {
+        this.m_Subtitles = Load(textAsset);
+    }
+
+    static public List<SubtitleBlock> Load(TextAsset textAsset)
+    {
+        if (textAsset == null)
+        {
+            return null;
+        }
+
+        var lines = textAsset.text.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+
+        var currentState = ReadState.Index;
+
+        var subs = new List<SubtitleBlock>();
+
+        int currentIndex = 0;
+        double currentFrom = 0, currentTo = 0;
+        var currentText = string.Empty;
+        for (var l = 0; l < lines.Length; l++)
+        {
+            var line = lines[l];
+
+            switch (currentState)
+            {
+                case ReadState.Index:
+                    {
+                        int index;
+                        if (Int32.TryParse(line, out index))
+                        {
+                            currentIndex = index;
+                            currentState = ReadState.Time;
+                        }
+                    }
+                    break;
+                case ReadState.Time:
+                    {
+                        line = line.Replace(',', '.');
+                        var parts = line.Split(new[] { "-->" }, StringSplitOptions.RemoveEmptyEntries);
+
+                        if (parts.Length == 2)
+                        {
+                            TimeSpan fromTime;
+                            if (TimeSpan.TryParse(parts[0], out fromTime))
+                            {
+                                TimeSpan toTime;
+                                if (TimeSpan.TryParse(parts[1], out toTime))
+                                {
+                                    currentFrom = fromTime.TotalSeconds;
+                                    currentTo = toTime.TotalSeconds;
+                                    currentState = ReadState.Text;
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case ReadState.Text:
+                    {
+                        if (currentText != string.Empty)
+                            currentText += "\r\n";
+
+                        currentText += line;
+
+                        if (string.IsNullOrEmpty(line) || l == lines.Length - 1)
+                        {
+                            subs.Add(new SubtitleBlock(currentIndex, currentFrom, currentTo, currentText));
+
+                            currentText = string.Empty;
+                            currentState = ReadState.Index;
+                        }
+                    }
+                    break;
+            }
+        }
+        return subs;
+    }
+
+    public SubtitleBlock GetForTime(float time)
+    {
+        if (m_Subtitles.Count > 0)
+        {
+            var subtitle = m_Subtitles[0];
+
+            if (time >= subtitle.To)
+            {
+                m_Subtitles.RemoveAt(0);
+
+                if (m_Subtitles.Count == 0)
+                    return null;
+
+                subtitle = m_Subtitles[0];
+            }
+
+            if (subtitle.From > time)
+                return SubtitleBlock.Blank;
+
+            return subtitle;
+        }
+        return null;
+    }
+}
+
+public class SubtitleBlock
+{
+    static SubtitleBlock m_Blank;
+    public static SubtitleBlock Blank
+    {
+        get { return m_Blank ?? (m_Blank = new SubtitleBlock(0, 0, 0, string.Empty)); }
+    }
+    public int Index { get; private set; }
+    public double Length { get; private set; }
+    public double From { get; private set; }
+    public double To { get; private set; }
+    public string Text { get; private set; }
+
+    public SubtitleBlock(int index, double from, double to, string text)
+    {
+        this.Index = index;
+        this.From = from;
+        this.To = to;
+        this.Length = to - from;
+        this.Text = text;
+    }
+}

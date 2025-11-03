@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a01956159d5482b914eedf3950b1a8, type: 3}
+  m_Name: AudioFormatSettings
+  m_EditorClassIdentifier: 
+  settings:
+  - Name: BackGround
+    PreFix: 1
+    PostFix: 1
+    forceToMono: 1
+    loadInBackground: 1
+    loadType: 1
+    compressionFormat: 1
+    quality: 1
+  - Name: SFX
+    PreFix: 2
+    PostFix: 0
+    forceToMono: 1
+    loadInBackground: 0
+    loadType: 0
+    compressionFormat: 1
+    quality: 1

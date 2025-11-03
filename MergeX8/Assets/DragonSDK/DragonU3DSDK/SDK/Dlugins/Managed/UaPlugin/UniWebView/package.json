@@ -1,0 +1,15 @@
+{
+  "name": "com.dragonplus.uniwebview",
+  "version": "1.0.0",
+  "unity": "2022.2",
+  "displayName": "Dragon SDK UniWebView",
+  "description": "UniWebView module",
+  "keywords": [
+    "webview"
+  ],
+  "dependencies": {},
+  "category": "SDK",
+  "author": {
+    "name": "DragonPlus"
+  }
+}

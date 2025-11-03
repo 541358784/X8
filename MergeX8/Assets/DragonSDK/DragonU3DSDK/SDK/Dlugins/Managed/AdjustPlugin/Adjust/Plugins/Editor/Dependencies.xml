@@ -1,0 +1,11 @@
+<!-- Copyright (C) 2018 Google Inc. All Rights Reserved.
+
+FirebaseApp iOS and Android Dependencies.
+-->
+<dependencies>
+  <iosPods>
+  </iosPods>
+  <androidPackages>
+    <androidPackage spec="com.android.installreferrer:installreferrer:2.2" />
+  </androidPackages>
+</dependencies>

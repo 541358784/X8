@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#sudo npm install -g firebase-tools
+#firebase login
+#firebase projects:list
+
+config=$(cat $(dirname $0)/../../../../google-services.json | tr -d ' \r\n\t"')
+app_id=$(expr $config : '.*mobilesdk_app_id:\([^,]*\).*')
+
+firebase crashlytics:symbols:upload --app=$app_id "$1"

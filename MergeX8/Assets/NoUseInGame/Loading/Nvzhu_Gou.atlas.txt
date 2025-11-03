@@ -1,0 +1,139 @@
+
+Nvzhu_Gou.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nvzhu_0
+  rotate: true
+  xy: 804, 279
+  size: 58, 93
+  orig: 58, 93
+  offset: 0, 0
+  index: -1
+nvzhu_1
+  rotate: false
+  xy: 295, 2
+  size: 14, 20
+  orig: 15, 21
+  offset: 0, 1
+  index: -1
+nvzhu_10
+  rotate: true
+  xy: 804, 338
+  size: 173, 179
+  orig: 180, 187
+  offset: 0, 0
+  index: -1
+nvzhu_11
+  rotate: true
+  xy: 224, 148
+  size: 51, 232
+  orig: 187, 248
+  offset: 66, 0
+  index: -1
+nvzhu_12
+  rotate: true
+  xy: 144, 80
+  size: 31, 51
+  orig: 37, 55
+  offset: 4, 2
+  index: -1
+nvzhu_13
+  rotate: false
+  xy: 322, 200
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+nvzhu_14
+  rotate: false
+  xy: 202, 6
+  size: 92, 141
+  orig: 118, 141
+  offset: 0, 0
+  index: -1
+nvzhu_15
+  rotate: true
+  xy: 143, 112
+  size: 35, 58
+  orig: 37, 60
+  offset: 1, 1
+  index: -1
+nvzhu_16
+  rotate: false
+  xy: 457, 5
+  size: 66, 228
+  orig: 144, 239
+  offset: 28, 0
+  index: -1
+nvzhu_17
+  rotate: true
+  xy: 700, 271
+  size: 240, 103
+  orig: 242, 105
+  offset: 1, 1
+  index: -1
+nvzhu_18
+  rotate: true
+  xy: 224, 200
+  size: 311, 97
+  orig: 313, 97
+  offset: 0, 0
+  index: -1
+nvzhu_2
+  rotate: false
+  xy: 501, 239
+  size: 198, 272
+  orig: 203, 272
+  offset: 4, 0
+  index: -1
+nvzhu_3
+  rotate: false
+  xy: 144, 7
+  size: 44, 72
+  orig: 44, 72
+  offset: 0, 0
+  index: -1
+nvzhu_4
+  rotate: false
+  xy: 524, 3
+  size: 190, 235
+  orig: 192, 237
+  offset: 1, 1
+  index: -1
+nvzhu_5
+  rotate: false
+  xy: 0, 0
+  size: 143, 107
+  orig: 143, 107
+  offset: 0, 0
+  index: -1
+nvzhu_6
+  rotate: false
+  xy: 143, 148
+  size: 80, 363
+  orig: 188, 421
+  offset: 57, 30
+  index: -1
+nvzhu_7
+  rotate: false
+  xy: 295, 23
+  size: 123, 124
+  orig: 123, 124
+  offset: 0, 0
+  index: -1
+nvzhu_8
+  rotate: true
+  xy: 0, 108
+  size: 403, 142
+  orig: 478, 294
+  offset: 44, 70
+  index: -1
+nvzhu_9
+  rotate: false
+  xy: 322, 234
+  size: 178, 277
+  orig: 178, 277
+  offset: 0, 0
+  index: -1

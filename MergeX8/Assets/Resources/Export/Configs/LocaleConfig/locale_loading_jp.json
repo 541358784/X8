@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "プライバシー規約"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "ゲームを続行する前に、プライバシーポリシーに同意する必要があります"
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "個人情報保護方針"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "同意"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "「インターネット接続がありません。\n ネットワーク接続を確認して、もう一度お試しください。 \""
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "インターネット接続なし。 インターネットに接続して、もう一度お試しください"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "中止"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "はい"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "また"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "中止"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "ゲームをやめますか？"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "ゲームは別のデバイスでも開いています。 他のデバイスでプレイしたい場合は、このゲームを閉じてください。 今すぐプレイを続けたい場合は、[OK] をクリックしてください。ゲームを再開します。"
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "アプリを最新バージョンに更新し、更新特典をメールでご確認ください。"
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "ヒント"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "サービスチーム"
+    }
+]

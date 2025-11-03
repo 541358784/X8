@@ -1,0 +1,13 @@
+
+BG_hai.png
+size: 768,1720
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 0, 0
+  size: 768, 1720
+  orig: 768, 1720
+  offset: 0, 0
+  index: -1

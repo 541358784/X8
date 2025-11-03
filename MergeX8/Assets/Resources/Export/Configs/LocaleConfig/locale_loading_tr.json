@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Gizlilik Politikasını Kabul Et"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Oynamaya devam etmek için Gizlilik Politikamızı kabul ettiğinizi onaylamanız gerekir."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Gizlilik Politikası"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Kabul ediyorum"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Kaynak indirilemedi, lütfen internetinizi kontrol edin."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Sunucuya bağlanırken hata oluştu. Lütfen İnternet bağlantınızı kontrol edin."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "iptal etmek"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "Tamam"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "yeniden dene"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "iptal etmek"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Bırakmak ister misin?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Oyunu başka bir cihazda açtınız. Diğer cihazda oynamak için lütfen bu oyunu kapatın. Burada oynamaya devam etmek için sadece 'Tamam'a dokunun ve bu oyun yeniden başlayacaktır."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Lütfen uygulamanızı en son sürüme güncelleyin ve oyunu yeniden başlatın."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "İpuçları"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Hizmet Ekipleri"
+    }
+]

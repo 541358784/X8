@@ -1,0 +1,9 @@
+<linker>
+    <assembly fullname="Unity.Timeline" preserve="all"/>
+    <assembly fullname="UnityEngine">
+        <namespace fullname="UnityEngine.Playables" preserve="all"/>
+    </assembly>
+
+    <assembly fullname="spine-timeline" preserve="all"/>
+    <assembly fullname="spine-unity" preserve="all"/>
+</linker>

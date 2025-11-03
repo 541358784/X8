@@ -1,0 +1,12 @@
+DragonU3DSDK/SDK/Dlugins/Managed/AppLovinPlugin/Plugins/iOS/AppLovinSDK.framework/AppLovinSDK filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/FirebasePlugin/Firebase/Plugins/x86_64/FirebaseCppApp-6_6_0.so filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/AdColonyPlugin/Plugins/iOS/AdColony/AdColony.framework/AdColony filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/IronSourcePlugin/Plugins/ios/IronSource/IronSource/IronSource.framework/Versions/A/IronSource filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/IronSourcePlugin/Plugins/ios/IronSource/IronSource/IronSource.framework/IronSource filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/ChartboostPlugin/Plugins/iOS/ChartBoost/libChartboost.a filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/FirebasePlugin/Plugins/iOS/Firebase/libFirebaseCppApp.a filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/AdjustPlugin/Plugins/iOS/Adjust/AdjustSdk.a filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/FirebasePlugin/Firebase/Plugins/x86_64/FirebaseCppApp-6_6_0.bundle filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/ChartboostPlugin/Plugins/iOS/ChartBoost/libCHAMoatMobileAppKit.a filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/FirebasePlugin/Firebase/Editor/generate_xml_from_google_services_json.exe filter=lfs diff=lfs merge=lfs -text
+DragonU3DSDK/SDK/Dlugins/Managed/AdjustPlugin/Adjust/iOS/AdjustSdk.a filter=lfs diff=lfs merge=lfs -text

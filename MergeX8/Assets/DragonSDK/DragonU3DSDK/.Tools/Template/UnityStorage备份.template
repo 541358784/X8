@@ -1,0 +1,284 @@
+/************************************************
+ * Storage class : {{className}}
+ * This file is can not be modify !!!
+ * If there is some problem, ask bin.guo.
+ ************************************************/
+
+using System;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+
+[System.Serializable]
+public class {{className}} : StorageBase
+{
+    {{#each fieldArray}}{{#if this.isNormalType}}
+    // {{this.desc}}
+    [JsonProperty]
+    {{this.realType}} {{this.fieldName}};
+    [JsonIgnore]
+    public {{this.realType}} {{this.getterName}}
+    {
+        get
+        {
+            return {{this.fieldName}};
+        }
+        set
+        {
+            if({{this.fieldName}} != value)
+            {
+                {{this.fieldName}} = value;
+                _dirty = true;
+                GlobalStorageDirty.Instance.Dirty = true;
+            }
+        }
+    }
+    // ---------------------------------//
+    {{/if}}{{# if this.isListNormalType}}
+    // {{this.desc}}
+    [JsonProperty]
+    {{{this.realType}}} {{this.fieldName}} = new {{{this.realType}}}();
+    [JsonIgnore]
+    public {{{this.realType}}} {{this.getterName}}
+    {
+        get
+        {
+            return {{this.fieldName}};
+        }
+    }
+    // ---------------------------------//
+    {{/if}}{{# if this.isDictionaryNormalType}}
+    // {{this.desc}}
+    [JsonProperty]
+    {{{this.realType}}} {{this.fieldName}} = new {{{this.realType}}}();
+    [JsonIgnore]
+    public {{{this.realType}}} {{this.getterName}}
+    {
+        get
+        {
+            return {{this.fieldName}};
+        }
+    }
+    // ---------------------------------//
+    {{/if}}{{# if this.isStorageType}}
+    // {{this.desc}}
+    [JsonProperty]
+    {{this.realType}} {{this.fieldName}} = new {{this.realType}}();
+    [JsonIgnore]
+    public {{this.realType}} {{this.getterName}}
+    {
+        get
+        {
+            return {{this.fieldName}};
+        }
+    }
+    // ---------------------------------//
+    {{/if}}{{#if this.isListStorageType}}
+    // {{this.desc}}
+    [JsonProperty]
+    {{{this.realType}}} {{this.fieldName}} = new {{{this.realType}}}();
+    [JsonIgnore]
+    {{{this.realType}}} {{this.getterName}}
+    {
+        get
+        {
+            return {{this.fieldName}};
+        }
+    }
+    // ---------------------------------//
+    {{/if}}{{#if this.isDictionaryStorageType}} 
+    // {{this.desc}}
+    [JsonProperty]
+    {{{this.realType}}} {{this.fieldName}} = new {{{this.realType}}}();
+    [JsonIgnore]
+    {{{this.realType}}} {{this.getterName}}
+    {
+        get
+        {
+            return {{this.fieldName}};
+        }
+    }
+    // ---------------------------------//
+    {{/if}}{{/each}}
+
+    public override bool IsDirty()
+    {
+        if (_dirty)
+        {
+            return true;
+        }
+        {{#each fieldArray}}{{#if this.isListNormalType}}
+        if ({{this.fieldName}}.IsDirty())
+        {
+            return true;
+        }
+
+        {{/if}}{{#if this.isDictionaryNormalType}}
+        if ({{this.fieldName}}.IsDirty())
+        {
+            return true;
+        }
+
+        {{/if}}{{#if this.isStorageType}}
+        if ({{this.fieldName}}.IsDirty())
+        {
+            return true;
+        }
+        
+        {{/if}}{{#if this.isListStorageType}}
+        if({{this.fieldName}}.IsDirty())
+        {
+            return true;
+        }
+        foreach(var p in {{this.fieldName}})
+        {
+            if (p.IsDirty())
+            {
+                return true; 
+            }
+        }
+
+        {{/if}}{{#if this.isDictionaryStorageType}}
+        if({{this.fieldName}}.IsDirty())
+        {
+            return true;
+        }
+        foreach(var p in {{this.fieldName}})
+        {
+            if(p.Value.IsDirty())
+            {
+                return true;
+            }
+        }
+        {{/if}}{{/each}}
+
+        return false;
+    }
+
+    public override void SetDirty(bool value)
+    {
+        _dirty = value;
+        {{#each fieldArray}}{{#if this.isListNormalType}}
+        {{this.fieldName}}.SetDirty(value);
+
+        {{/if}}{{#if this.isDictionaryNormalType}}
+        {{this.fieldName}}.SetDirty(value);
+
+        {{/if}}{{#if this.isListStorageType}}
+        {{this.fieldName}}.SetDirty(value);
+        foreach(var p in {{this.fieldName}})
+        {
+            p.SetDirty(value);
+        }
+
+        {{/if}}{{#if this.isDictionaryStorageType}}
+        {{this.fieldName}}.SetDirty(value);
+        foreach(var p in {{this.fieldName}})
+        {
+            p.Value.SetDirty(value);
+        }
+
+        {{/if}}{{#if this.isStorageType}}
+        {{this.fieldName}}.SetDirty(value);
+        {{/if}}{{/each}}
+    }
+
+    public override void ToJObject(JObject jObj)
+    {
+        if(_dirty)
+        {
+            {{#each this.fieldArray}}{{#if this.isNormalType}}
+            jObj["{{this.fieldName}}"] = {{this.fieldName}};
+
+            {{/if}}{{/each}}
+        }
+
+        {{#each this.fieldArray}}{{#if this.isListNormalType}}
+        if ({{this.fieldName}}.IsDirty())
+        {
+            JArray array = new JArray();
+            foreach (var value in {{this.fieldName}})
+            {
+                array.Add(value);
+            }
+            if(array.Count > 0)
+            {
+                jObj["{{this.fieldName}}"] = array;
+            }
+        }
+
+        {{/if}}{{#if this.isDictionaryNormalType}}
+        if({{this.fieldName}}.IsDirty())
+        {
+            JObject o = new JObject();
+            foreach (var p in {{this.fieldName}})
+            {
+                o[p.Key] = p.Value;
+            }
+            if(o.HasValues)
+            {
+                jObj["{{this.fieldName}}"] = o;
+            } 
+        }
+
+        {{/if}}{{#if this.isListStorageType}}
+        bool bDirty_{{this.fieldName}} = false;
+        if({{this.fieldName}}.IsDirty())
+        {
+            bDirty_{{this.fieldName}} = true;
+        }
+        else
+        {
+            foreach (var p in {{this.fieldName}})
+            {
+                if(p.IsDirty())
+                {
+                    bDirty_{{this.fieldName}} = true;
+                    break;
+                }
+            }
+        }
+        if(bDirty_{{this.fieldName}})
+        {
+            JArray array = new JArray();
+            foreach (var value in {{this.fieldName}})
+            {
+                value.SetDirty(true);
+                JObject o = new JObject();
+                value.ToJObject(o);
+                array.Add(o);
+            }
+            if(array.Count > 0)
+            {  
+                jObj["{{this.fieldName}}"] = array;
+            } 
+        }
+
+        {{/if}}{{#if this.isDictionaryStorageType}}
+        JObject obj_{{this.fieldName}} = new JObject();
+        foreach (var p in {{this.fieldName}})
+        {
+            if (p.Value.IsDirty())
+            {
+                JObject po = new JObject();
+                p.Value.ToJObject(po);
+                obj_{{this.fieldName}}[p.Key] = po;
+            }
+        }
+        if(obj_{{this.fieldName}}.HasValues)
+        {
+            jObj["{{this.fieldName}}"] = obj_{{this.fieldName}};
+        }
+
+        {{/if}}{{#if this.isStorageType}}
+        if({{this.fieldName}}.IsDirty())
+        {
+            JObject o = new JObject();
+            {{this.fieldName}}.ToJObject(o);
+            if(o.HasValues)
+            {
+                jObj["{{this.fieldName}}"] = o;
+            }
+        }
+        {{/if}}{{/each}}  
+    }
+}

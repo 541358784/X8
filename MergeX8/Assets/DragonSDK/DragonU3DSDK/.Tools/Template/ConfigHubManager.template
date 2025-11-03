@@ -1,0 +1,113 @@
+// ReSharper disable CommentTypo
+// ReSharper disable StringLiteralTypo
+// ReSharper disable MemberCanBePrivate.Global
+/************************************************
+ * {{this.nameSpace}} ConfigHub Manager class : {{this.managerClassName}}
+ * This file is can not be modify !!!
+ * If there is some problem, ask yunhan.zeng@dragonplus.com
+ ************************************************/
+
+using System;
+using System.Reflection;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Newtonsoft.Json;
+using DragonU3DSDK.Asset;
+
+namespace DragonPlus.ConfigHub.{{this.nameSpace}}
+{
+    public class {{this.managerClassName}} : ConfigManagerBase
+    {   
+        private static {{this.managerClassName}} _instance;
+        public static {{this.managerClassName}} Instance => _instance ?? (_instance = new {{this.managerClassName}}());
+        public override string Guid => "{{this.guid}}";
+        public override int VersionMinIOS => {{this.version_min_ios}};
+        public override int VersionMinAndroid => {{this.version_min_android}};
+        protected override List<string> SubModules => new List<string> { {{#each fieldArray}}{{#isModule this.configClassName}}
+            "{{this.configClassName}}",{{/isModule}}{{/each}}
+        };
+        private readonly Dictionary<Type, string> typeToEnum = new Dictionary<Type,string> { {{#each fieldArray}}{{#isModule this.configClassName}}
+            [typeof({{this.configClassName}})] = "{{this.configClassName}}",{{/isModule}}{{/each}}
+        };
+        {{#each fieldArray}}{{#isModule this.configClassName}}private List<{{this.configClassName}}> {{this.configClassName}}List;
+        {{/isModule}}{{/each}}
+        public override List<T> GetConfig<T>(CacheOperate cacheOp = CacheOperate.None, long cacheDuration = 0)
+        {
+            List<T> cfg;
+            var subModule = typeToEnum[typeof(T)];
+            switch (subModule)
+            { {{#each fieldArray}}{{#isModule this.configClassName}}
+                case "{{this.configClassName}}": cfg = {{this.configClassName}}List as List<T>; break;{{/isModule}}{{/each}}
+                default: throw new ArgumentOutOfRangeException(nameof(subModule), subModule, null);
+            }
+            processCache(cacheOp, cacheDuration);
+            return cfg;
+        }
+
+        protected override bool CheckTable(Hashtable table)
+        {   {{#each fieldArray}}{{#isModule this.configClassName}}
+            if (!table.ContainsKey("{{this.lowersheetname}}")) return false;{{/isModule}}{{/each}}
+            return true;
+        }
+
+        private Hashtable loadFromLocal()
+        {
+            var ta = ResourcesManager.Instance.LoadResource<TextAsset>("{{this.jsonPath}}");
+            if (string.IsNullOrEmpty(ta.text))
+            {
+                ConfigHubUtil.L("Load {{this.jsonPath}} error!");
+                return null;
+            }
+            return JsonConvert.DeserializeObject<Hashtable>(ta.text);
+        }
+
+        public override void InitConfig(MetaData metaData, string jsonData = null)
+        {
+            var table = !string.IsNullOrEmpty(jsonData) ? JsonConvert.DeserializeObject<Hashtable>(jsonData) : null;
+            IsRemote = metaData != null && table != null && CheckTable(table);
+            if (!IsRemote)
+            {
+                table = loadFromLocal();
+                metaData = GetMetaDataCached() ?? GetMetaDataDefault();
+            }
+            MetaData = metaData;
+            
+            PropertyInfo pInfo;
+            foreach (var subModule in SubModules)
+            {
+                switch (subModule)
+                { {{#each fieldArray}}{{#isModule this.configClassName}}
+                    case "{{this.configClassName}}": {{this.configClassName}}List = JsonConvert.DeserializeObject<List<{{this.configClassName}}>>(JsonConvert.SerializeObject(table["{{this.lowersheetname}}"])); break;{{/isModule}}{{/each}}
+                    default: throw new ArgumentOutOfRangeException(nameof(subModule), subModule, null);
+                }
+
+                if (IsRemote)
+                    continue;
+
+                switch (subModule)
+                { {{#each fieldArray}}{{#isModule this.configClassName}}
+                    case "{{this.configClassName}}": 
+                        pInfo = typeof({{this.configClassName}}).GetProperty("UserGroup");
+                        if (pInfo != null && pInfo.PropertyType == typeof(int))
+                            {{this.configClassName}}List = {{this.configClassName}}List.FindAll(cfg => (int)pInfo.GetValue(cfg) == metaData.GroupId);
+                        break;{{/isModule}}{{/each}}
+                    default: throw new ArgumentOutOfRangeException(nameof(subModule), subModule, null);
+                }
+            }
+            
+            ConfigHubUtil.L($"InitConfig:{getModuleString()}");
+        }
+
+        private List<Rules> RulesList;
+        protected override bool HasGroup(int groupId)
+        {
+            if (RulesList == null || RulesList.Count == 0)
+            {
+                var table = loadFromLocal();
+                RulesList = JsonConvert.DeserializeObject<List<Rules>>(JsonConvert.SerializeObject(table["rules"]));
+            }
+            return RulesList.Exists(r => r.GroupId == groupId);
+        }
+    }
+}

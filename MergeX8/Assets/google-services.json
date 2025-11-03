@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "984070032149",
+    "project_id": "fb-adventure-island-merge",
+    "storage_bucket": "fb-adventure-island-merge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984070032149:android:916c6dfb60d0b2dd52371c",
+        "android_client_info": {
+          "package_name": "com.flybirdgames.adventureislandmerge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984070032149-ocf56nnra7u1sfcus9nrns8ks4at8aru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm2ZL9m3b_0hyg3_msJLGYLMLDZL8UBrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984070032149-ocf56nnra7u1sfcus9nrns8ks4at8aru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "984070032149-sb3rbk05r4oajrol0ftsmsm3221da4la.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flybirdgames.adventureislandmerge",
+                "app_store_id": "6443478413"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

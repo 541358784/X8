@@ -1,0 +1,62 @@
+[
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Aceptar Política de Privacidad"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Para continuar jugando, debe confirmar que acepta nuestra Política de privacidad."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Política de privacidad"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Estoy de acuerdo"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "No se pudo descargar el recurso, verifique su Internet."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Error al conectar con el servidor. Por favor revise su conexion a internet."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Cancelar"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "OK"
+    },
+    {
+        "key": "UI_button_retry",
+        "value": "Rever"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Cancelar"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "¿Te gustaría dejar de fumar?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Has abierto el juego en otro dispositivo. Para jugar en el otro dispositivo, cierra este juego. Para seguir jugando aquí, simplemente toque 'OK' y este juego se reiniciará."
+    },
+    {
+        "key": "UI_update_app_desc_text",
+        "value": "Actualice su aplicación a la última versión y verifique las recompensas de actualización por correo electrónico."
+    },
+    {
+        "key": "UI_tips_title",
+        "value": "Consejos"
+    },
+    {
+        "key": "UI_terms_of_service",
+        "value": "Equipos de Servicio"
+    }
+]

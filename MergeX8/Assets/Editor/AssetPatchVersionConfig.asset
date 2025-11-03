@@ -1,0 +1,988 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf71d75d607df4221a57b9e981e7d1be, type: 3}
+  m_Name: AssetPatchVersionConfig
+  m_EditorClassIdentifier: 
+  AndroidAssetsPatchVersion:
+  - name: Configs/Home
+    version: 2
+  - name: RoomRes/Configs/Room/Room1002
+    version: 2
+  - name: RoomRes/Configs/Room/Room1004
+    version: 2
+  - name: RoomRes/Configs/Room/Room1001
+    version: 2
+  - name: RoomRes/Configs/Room/Room1003
+    version: 2
+  - name: RoomRes/Configs/Room/Room1005
+    version: 2
+  - name: RoomRes/Configs/Room/Room1006
+    version: 2
+  - name: RoomRes/Configs/Room/Room1007
+    version: 2
+  - name: RoomRes/Configs/Room/Room1008
+    version: 2
+  - name: RoomRes/Configs/Room/Room1009
+    version: 2
+  - name: Materials/UIMaterials
+    version: 2
+  - name: Materials/UIEffect
+    version: 3
+  - name: Materials/Cooking
+    version: 2
+  - name: Timelines/UI
+    version: 2
+  - name: Textures/UIEffectTextures
+    version: 2
+  - name: Textures/Particle
+    version: 2
+  - name: Animations/UI/Loading
+    version: 2
+  - name: Animations/UI/Basic
+    version: 2
+  - name: Animations/Character
+    version: 2
+  - name: Audios/BGM/bgm_upgrade
+    version: 2
+  - name: Audios/Sound
+    version: 2
+  - name: Prefabs/UI/Cooking/Common
+    version: 2
+  - name: Prefabs/UI/Cooking/Effect
+    version: 2
+  - name: Prefabs/UI/Cooking/WorldCommon
+    version: 2
+  - name: Prefabs/UI/Cooking/Home
+    version: 3
+  - name: Prefabs/UI/Cooking/World1
+    version: 2
+  - name: ParticalSystems/Common
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1002
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1004
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1001
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1003
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1005
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1006
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1007
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1008
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1009
+    version: 2
+  - name: Configs/Cooking/GuideConfig
+    version: 2
+  - name: Configs/Cooking/CommonConfig
+    version: 2
+  - name: Configs/Cooking/HallowmasConfig
+    version: 2
+  - name: Configs/Cooking/LocaleConfig
+    version: 2
+  - name: Configs/Cooking/NPCConfig
+    version: 2
+  - name: Configs/Cooking/WorldConfig
+    version: 2
+  - name: Configs/Cooking/Map1Config
+    version: 2
+  - name: Configs/Cooking/Map2Config
+    version: 2
+  - name: Configs/Cooking/Map3Config
+    version: 2
+  - name: Configs/Cooking/Map4Config
+    version: 2
+  - name: Configs/Cooking/Map5Config
+    version: 2
+  - name: Configs/Cooking/Map6Config
+    version: 2
+  - name: Configs/Cooking/Map7Config
+    version: 2
+  - name: Configs/Cooking/Map8Config
+    version: 2
+  - name: Configs/Cooking/Map9Config
+    version: 2
+  - name: Configs/Cooking/Map10Config
+    version: 2
+  - name: Configs/Cooking/Map11Config
+    version: 2
+  - name: Configs/Cooking/Map12Config
+    version: 2
+  - name: Configs/Cooking/Map13Config
+    version: 2
+  - name: Configs/Cooking/Map14Config
+    version: 2
+  - name: Configs/Cooking/Map15Config
+    version: 2
+  - name: Configs/Cooking/Map16Config
+    version: 2
+  - name: Configs/Cooking/Map101Config
+    version: 2
+  - name: Prefabs/UI/Cooking/Map1
+    version: 2
+  - name: Prefabs/UI/Cooking/Map2
+    version: 2
+  - name: Prefabs/UI/Cooking/Map3
+    version: 2
+  - name: Prefabs/UI/Cooking/Map4
+    version: 2
+  - name: Prefabs/UI/Cooking/Map5
+    version: 2
+  - name: Prefabs/UI/Cooking/Map6
+    version: 2
+  - name: Prefabs/UI/Cooking/Map7
+    version: 2
+  - name: Prefabs/UI/Cooking/Map8
+    version: 2
+  - name: Prefabs/UI/Cooking/Map9
+    version: 2
+  - name: Prefabs/UI/Cooking/Map10
+    version: 2
+  - name: Prefabs/UI/Cooking/Map11
+    version: 2
+  - name: Prefabs/UI/Cooking/Map12
+    version: 2
+  - name: Prefabs/UI/Cooking/Map13
+    version: 2
+  - name: Prefabs/UI/Cooking/Map14
+    version: 2
+  - name: Prefabs/UI/Cooking/Map15
+    version: 2
+  - name: Prefabs/UI/Cooking/Map16
+    version: 2
+  - name: Prefabs/UI/Cooking/Map101
+    version: 2
+  - name: Audios/BGM/bgm_map1
+    version: 2
+  - name: Audios/BGM/bgm_map2
+    version: 2
+  - name: Audios/BGM/bgm_map3
+    version: 2
+  - name: Audios/BGM/bgm_map4
+    version: 2
+  - name: Audios/BGM/bgm_map5
+    version: 2
+  - name: Audios/BGM/bgm_map6
+    version: 2
+  - name: Audios/BGM/bgm_map7
+    version: 2
+  - name: Audios/BGM/bgm_map8
+    version: 2
+  - name: Audios/BGM/bgm_map9
+    version: 2
+  - name: Audios/BGM/bgm_map10
+    version: 2
+  - name: Audios/BGM/bgm_map11
+    version: 2
+  - name: Audios/BGM/bgm_map12
+    version: 2
+  - name: Audios/BGM/bgm_map13
+    version: 2
+  - name: Audios/BGM/bgm_map14
+    version: 2
+  - name: Audios/BGM/bgm_map15
+    version: 2
+  - name: Audios/BGM/bgm_map16
+    version: 2
+  - name: Audios/BGM/bgm_map101
+    version: 2
+  - name: Audios/BGM/bgm_world1
+    version: 2
+  - name: SpriteAtlas/Local/GallerySpinAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/GallerySpinAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/GameUIPictureAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/GameUIPictureAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/GuideAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/GuideAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/LevelResultAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/LevelResultAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/Login_LoadingAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/Login_LoadingAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/MenAvatarAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/MenAvatarAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/NormalAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/NormalAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/PopupAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/PopupAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UICommon_UIIconAll_MapUIPicture_WorldCommon_LevelStartAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UICommon_UIIconAll_MapUIPicture_WorldCommon_LevelStartAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyBonusAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyBonusAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyTaskAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyTaskAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIDecorationMain_UIIconHomeBrushAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIDecorationMain_UIIconHomeBrushAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantListAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantListAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantRankIconAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantRankIconAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UISetting_FaceBookAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UISetting_FaceBookAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIShopAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIShopAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIStory_Portrait_Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIStory_Portrait_Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UpgradeUIAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UpgradeUIAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/WomenAvatarAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/WomenAvatarAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/World1/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/World1/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1001/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1001/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1002/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1002/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1003/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1003/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1004/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1004/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1005/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1005/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1006/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1006/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1007/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1007/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1008/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1008/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1009/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1009/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1001/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1001/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1002/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1002/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1003/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1003/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1004/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1004/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1005/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1005/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1006/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1006/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1007/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1007/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1008/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1008/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1009/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1009/Sd
+    version: 2
+  - name: Prefabs/UI/Cooking/PiggyBank
+    version: 2
+  - name: SpriteAtlas/Activities/UIPiggyBankAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Activities/UIPiggyBankAtlas/Sd
+    version: 2
+  - name: Prefabs/UI/Cooking/MysteryBox
+    version: 2
+  - name: SpriteAtlas/Activities/MysteryBoxAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Activities/MysteryBoxAtlas/Sd
+    version: 2
+  - name: Prefabs/UI/Cooking/TimeLimitPass
+    version: 2
+  - name: SpriteAtlas/Activities/TimeLimitPassAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Activities/TimeLimitPassAtlas/Sd
+    version: 2
+  IOSAssetsPatchVersion:
+  - name: Configs/Home
+    version: 2
+  - name: RoomRes/Configs/Room/Room1002
+    version: 2
+  - name: RoomRes/Configs/Room/Room1004
+    version: 2
+  - name: RoomRes/Configs/Room/Room1001
+    version: 2
+  - name: RoomRes/Configs/Room/Room1003
+    version: 2
+  - name: RoomRes/Configs/Room/Room1005
+    version: 2
+  - name: RoomRes/Configs/Room/Room1006
+    version: 2
+  - name: RoomRes/Configs/Room/Room1007
+    version: 2
+  - name: RoomRes/Configs/Room/Room1008
+    version: 2
+  - name: RoomRes/Configs/Room/Room1009
+    version: 2
+  - name: Materials/UIMaterials
+    version: 2
+  - name: Materials/UIEffect
+    version: 3
+  - name: Materials/Cooking
+    version: 2
+  - name: Timelines/UI
+    version: 2
+  - name: Textures/UIEffectTextures
+    version: 2
+  - name: Textures/Particle
+    version: 2
+  - name: Animations/UI/Loading
+    version: 2
+  - name: Animations/UI/Basic
+    version: 2
+  - name: Animations/Character
+    version: 2
+  - name: Audios/BGM/bgm_upgrade
+    version: 2
+  - name: Audios/Sound
+    version: 2
+  - name: Prefabs/UI/Cooking/Common
+    version: 2
+  - name: Prefabs/UI/Cooking/Effect
+    version: 2
+  - name: Prefabs/UI/Cooking/WorldCommon
+    version: 2
+  - name: Prefabs/UI/Cooking/Home
+    version: 3
+  - name: Prefabs/UI/Cooking/World1
+    version: 2
+  - name: ParticalSystems/Common
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1002
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1004
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1001
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1003
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1005
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1006
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1007
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1008
+    version: 2
+  - name: RoomRes/Prefabs/Room/Room1009
+    version: 2
+  - name: Configs/Cooking/GuideConfig
+    version: 2
+  - name: Configs/Cooking/CommonConfig
+    version: 2
+  - name: Configs/Cooking/HallowmasConfig
+    version: 2
+  - name: Configs/Cooking/LocaleConfig
+    version: 2
+  - name: Configs/Cooking/NPCConfig
+    version: 2
+  - name: Configs/Cooking/WorldConfig
+    version: 2
+  - name: Configs/Cooking/Map1Config
+    version: 2
+  - name: Configs/Cooking/Map2Config
+    version: 2
+  - name: Configs/Cooking/Map3Config
+    version: 2
+  - name: Configs/Cooking/Map4Config
+    version: 2
+  - name: Configs/Cooking/Map5Config
+    version: 2
+  - name: Configs/Cooking/Map6Config
+    version: 2
+  - name: Configs/Cooking/Map7Config
+    version: 2
+  - name: Configs/Cooking/Map8Config
+    version: 2
+  - name: Configs/Cooking/Map9Config
+    version: 2
+  - name: Configs/Cooking/Map10Config
+    version: 2
+  - name: Configs/Cooking/Map11Config
+    version: 2
+  - name: Configs/Cooking/Map12Config
+    version: 2
+  - name: Configs/Cooking/Map13Config
+    version: 2
+  - name: Configs/Cooking/Map14Config
+    version: 2
+  - name: Configs/Cooking/Map15Config
+    version: 2
+  - name: Configs/Cooking/Map16Config
+    version: 2
+  - name: Configs/Cooking/Map101Config
+    version: 2
+  - name: Prefabs/UI/Cooking/Map1
+    version: 2
+  - name: Prefabs/UI/Cooking/Map2
+    version: 2
+  - name: Prefabs/UI/Cooking/Map3
+    version: 2
+  - name: Prefabs/UI/Cooking/Map4
+    version: 2
+  - name: Prefabs/UI/Cooking/Map5
+    version: 2
+  - name: Prefabs/UI/Cooking/Map6
+    version: 2
+  - name: Prefabs/UI/Cooking/Map7
+    version: 2
+  - name: Prefabs/UI/Cooking/Map8
+    version: 2
+  - name: Prefabs/UI/Cooking/Map9
+    version: 2
+  - name: Prefabs/UI/Cooking/Map10
+    version: 2
+  - name: Prefabs/UI/Cooking/Map11
+    version: 2
+  - name: Prefabs/UI/Cooking/Map12
+    version: 2
+  - name: Prefabs/UI/Cooking/Map13
+    version: 2
+  - name: Prefabs/UI/Cooking/Map14
+    version: 2
+  - name: Prefabs/UI/Cooking/Map15
+    version: 2
+  - name: Prefabs/UI/Cooking/Map16
+    version: 2
+  - name: Prefabs/UI/Cooking/Map101
+    version: 2
+  - name: Audios/BGM/bgm_map1
+    version: 2
+  - name: Audios/BGM/bgm_map2
+    version: 2
+  - name: Audios/BGM/bgm_map3
+    version: 2
+  - name: Audios/BGM/bgm_map4
+    version: 2
+  - name: Audios/BGM/bgm_map5
+    version: 2
+  - name: Audios/BGM/bgm_map6
+    version: 2
+  - name: Audios/BGM/bgm_map7
+    version: 2
+  - name: Audios/BGM/bgm_map8
+    version: 2
+  - name: Audios/BGM/bgm_map9
+    version: 2
+  - name: Audios/BGM/bgm_map10
+    version: 2
+  - name: Audios/BGM/bgm_map11
+    version: 2
+  - name: Audios/BGM/bgm_map12
+    version: 2
+  - name: Audios/BGM/bgm_map13
+    version: 2
+  - name: Audios/BGM/bgm_map14
+    version: 2
+  - name: Audios/BGM/bgm_map15
+    version: 2
+  - name: Audios/BGM/bgm_map16
+    version: 2
+  - name: Audios/BGM/bgm_map101
+    version: 2
+  - name: Audios/BGM/bgm_world1
+    version: 2
+  - name: SpriteAtlas/Local/GallerySpinAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/GallerySpinAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/GameUIPictureAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/GameUIPictureAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/GuideAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/GuideAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/LevelResultAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/LevelResultAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/Login_LoadingAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/Login_LoadingAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/MenAvatarAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/MenAvatarAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/NormalAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/NormalAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/PopupAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/PopupAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UICommon_UIIconAll_MapUIPicture_WorldCommon_LevelStartAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UICommon_UIIconAll_MapUIPicture_WorldCommon_LevelStartAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyBonusAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyBonusAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyTaskAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIDailyTaskAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIDecorationMain_UIIconHomeBrushAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIDecorationMain_UIIconHomeBrushAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantListAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantListAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantRankIconAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIRestaurantRankIconAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UISetting_FaceBookAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UISetting_FaceBookAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIShopAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIShopAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UIStory_Portrait_Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UIStory_Portrait_Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/UpgradeUIAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/UpgradeUIAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Local/WomenAvatarAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Local/WomenAvatarAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map10GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map11GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map12GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map13GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map14GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map15GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map16GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map1GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map2GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map3GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map4GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map5GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map6GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map7GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map8GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9Atlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9Atlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9GameAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/Map9GameAtlas/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/World1/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Cooking/World1/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1001/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1001/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1002/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1002/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1003/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1003/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1004/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1004/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1005/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1005/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1006/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1006/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1007/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1007/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1008/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1008/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1009/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/1009/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1001/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1001/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1002/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1002/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1003/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1003/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1004/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1004/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1005/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1005/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1006/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1006/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1007/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1007/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1008/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1008/Sd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1009/Hd
+    version: 2
+  - name: SpriteAtlas/Remote/Room/Icon1009/Sd
+    version: 2
+  - name: Prefabs/UI/Cooking/PiggyBank
+    version: 2
+  - name: SpriteAtlas/Activities/UIPiggyBankAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Activities/UIPiggyBankAtlas/Sd
+    version: 2
+  - name: Prefabs/UI/Cooking/MysteryBox
+    version: 2
+  - name: SpriteAtlas/Activities/MysteryBoxAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Activities/MysteryBoxAtlas/Sd
+    version: 2
+  - name: Prefabs/UI/Cooking/TimeLimitPass
+    version: 2
+  - name: SpriteAtlas/Activities/TimeLimitPassAtlas/Hd
+    version: 2
+  - name: SpriteAtlas/Activities/TimeLimitPassAtlas/Sd
+    version: 2
